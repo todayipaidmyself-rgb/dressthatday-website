@@ -100,12 +100,21 @@ export default function Weddings() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/new_collection/21.webp",
-    "/images/about_proposal_scene.webp",
-    "/images/about_table_styling.webp",
-    "/images/about_detail_shot.webp",
-    "/images/new_collection/17.webp",
-    "/images/new_collection/16.webp"
+    "/images/wedding_gallery_1.webp",
+    "/images/wedding_gallery_2.webp",
+    "/images/wedding_gallery_3.webp",
+    "/images/wedding_gallery_4.webp",
+    "/images/wedding_gallery_5.webp",
+    "/images/wedding_gallery_6.webp"
+  ];
+
+  const galleryAltTexts = [
+    "Elegant champagne tower pouring at luxury wedding reception in Cyprus",
+    "Garden wedding ceremony setup with wooden chairs, white draping, and floral arch in Cyprus",
+    "Wedding ceremony welcome sign with names and date, floral arch and wooden chairs at Cyprus venue",
+    "Wedding aisle detail with fresh floral arrangements and white fabric draping on wooden chairs",
+    "Outdoor wedding reception table styling with baby's breath centerpieces and elegant place settings in Cyprus",
+    "Wedding reception styling with glass vases, baby's breath florals, and romantic outdoor ambiance"
   ];
 
   const openLightbox = (index: number) => {
@@ -116,8 +125,29 @@ export default function Weddings() {
   return (
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
-        <title>Luxury Wedding Styling | Dress That Day Cyprus</title>
-        <meta name="description" content="Exquisite wedding styling in Cyprus. From intimate ceremonies to grand receptions, we create breathtaking designs for your special day." />
+        <title>Luxury Wedding Styling Cyprus | Wedding Planner Paphos Limassol | Dress That Day</title>
+        <meta name="description" content="Exquisite wedding styling and planning in Cyprus. From intimate ceremonies to grand receptions, we create breathtaking designs for your special day in Paphos and Limassol. Full venue styling, ceremony arches, reception decor." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Luxury Wedding Styling Services",
+            "description": "Full-service wedding styling and planning in Cyprus including venue styling, ceremony arches, reception decor, floral arrangements, and on-the-day coordination.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Dress That Day",
+              "url": "https://dressthatday.site"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Cyprus"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR"
+            }
+          })}
+        </script>
       </Helmet>
 
       <Navigation />
@@ -188,7 +218,7 @@ export default function Weddings() {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 z-10" />
                 <img 
                   src={src} 
-                  alt={`Wedding setup ${index + 1}`}
+                  alt={galleryAltTexts[index]}
                   className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   loading="lazy"
                   decoding="async"
@@ -235,8 +265,9 @@ export default function Weddings() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/new_collection/21.webp" 
-                alt="Wedding details" 
+                src="/images/wedding_gallery_4.webp" 
+                alt="Wedding ceremony aisle with fresh floral arrangements and elegant styling details" 
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -254,10 +285,10 @@ export default function Weddings() {
             Let us create the wedding of your dreams.
           </p>
           <button 
-            onClick={() => setLocation("/design-your-day")}
+            onClick={() => setLocation("/contact")}
             className="inline-block px-12 py-5 bg-white text-black tracking-[0.2em] text-sm uppercase hover:bg-luxury-gold hover:text-white transition-colors duration-500 mt-8"
           >
-            Design Your Day
+            Get in Touch
           </button>
         </div>
       </div>

@@ -6,11 +6,34 @@ import PageHeading from '@/components/PageHeading';
 import { Link } from 'wouter';
 
 export default function ProposalStyling() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Luxury Proposal Styling Services",
+    "description": "Bespoke proposal styling and romantic setup services in Cyprus. Beach proposals, private dinners, light-up letters, and breathtaking romantic backdrops for your perfect moment.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Dress That Day",
+      "url": "https://dressthatday.site"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Cyprus"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Luxury Proposal Styling | Dress That Day Cyprus</title>
-        <meta name="description" content="Create the perfect 'Yes' moment with our bespoke proposal styling. Romantic beach setups, private dinners, and breathtaking backdrops." />
+        <title>Luxury Proposal Styling Cyprus | Romantic Beach Proposals | Dress That Day</title>
+        <meta name="description" content="Create the perfect 'Yes' moment with our bespoke proposal styling in Cyprus. Romantic beach setups, private dinners, light-up letters, and breathtaking backdrops. Serving Paphos and Limassol." />
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
       </Helmet>
 
       <Navigation />
@@ -20,7 +43,7 @@ export default function ProposalStyling() {
         <div className="absolute inset-0">
           <img 
             src="/images/heroes/proposals-hero.webp" 
-            alt="Luxury Proposal Setup" 
+            alt="Luxury romantic proposal setup with elegant styling in Cyprus" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/20" />
@@ -78,10 +101,10 @@ export default function ProposalStyling() {
             transition={{ delay: 0.4 }}
             className="font-body text-lg text-gray-600 leading-relaxed mb-12"
           >
-            We specialize in creating breathtaking proposal settings that capture the essence of your love story. From intimate beach picnics at sunset to grand gestures with light-up letters and thousands of rose petals, we handle every detail so you can focus on the moment.
+            We specialize in creating breathtaking proposal settings that capture the essence of your love story. From intimate beach picnics at sunset to grand gestures with light-up letters and thousands of rose petals, we handle every detail so you can focus on the moment. Whether you envision a romantic beach proposal in Paphos, a private dinner setup in Limassol, or a surprise engagement with stunning floral arrangements, we bring your vision to life.
           </motion.p>
           
-          <Link href="/design-your-day">
+          <Link href="/contact">
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -104,7 +127,8 @@ export default function ProposalStyling() {
           >
             <img 
               src="/images/new_collection/20.webp" 
-              alt="Marry Me Letters" 
+              alt="Elegant Marry Me light-up letters for romantic proposal in Cyprus" 
+              loading="lazy"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </motion.div>
@@ -116,14 +140,15 @@ export default function ProposalStyling() {
           >
             <img 
               src="/images/blog_proposal_beach_sunset.webp" 
-              alt="Beach Proposal" 
+              alt="Romantic beach proposal setup at sunset with elegant decor in Cyprus" 
+              loading="lazy"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
           </motion.div>
         </div>
       </section>
 
-      {/* Party Inspiration Gallery */}
+      {/* Proposal Inspiration Gallery */}
       <section className="py-24 px-6 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
@@ -142,15 +167,11 @@ export default function ProposalStyling() {
               transition={{ delay: 0.2 }}
               className="font-display text-3xl md:text-4xl text-luxury-text"
             >
-              Party Inspiration
+              Real Proposal Moments
             </motion.h3>
           </div>
           
-          {/* TODO: Wire in 6 uploaded proposal images here */}
-          {/* Gallery grid will display 6 unique proposal images in 3 columns on desktop, 2 on tablet, 1 on mobile */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Image slots ready for 6 uploaded images - DO NOT use duplicates or existing grid images */}
-            {/* Uncomment and update paths once images are uploaded:
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -158,8 +179,9 @@ export default function ProposalStyling() {
               className="aspect-[4/5] overflow-hidden"
             >
               <img 
-                src="/images/experiences/proposals/inspo/proposal-inspo-1.jpg" 
-                alt="Proposal Setup 1" 
+                src="/images/proposal_gallery_1.webp" 
+                alt="Romantic beach proposal with sparkler lights and couple embracing at sunset in Cyprus" 
+                loading="lazy"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </motion.div>
@@ -171,8 +193,9 @@ export default function ProposalStyling() {
               className="aspect-[4/5] overflow-hidden"
             >
               <img 
-                src="/images/experiences/proposals/inspo/proposal-inspo-2.jpg" 
-                alt="Proposal Setup 2" 
+                src="/images/proposal_gallery_2.webp" 
+                alt="Marry Me light-up letters proposal setup with red roses at iconic Cyprus shipwreck location" 
+                loading="lazy"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </motion.div>
@@ -184,8 +207,9 @@ export default function ProposalStyling() {
               className="aspect-[4/5] overflow-hidden"
             >
               <img 
-                src="/images/experiences/proposals/inspo/proposal-inspo-3.jpg" 
-                alt="Proposal Setup 3" 
+                src="/images/proposal_gallery_3.webp" 
+                alt="Luxury beach proposal with floral arch, white aisle runner, and Will You Marry Me sign at sunset" 
+                loading="lazy"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </motion.div>
@@ -197,8 +221,9 @@ export default function ProposalStyling() {
               className="aspect-[4/5] overflow-hidden"
             >
               <img 
-                src="/images/experiences/proposals/inspo/proposal-inspo-4.jpg" 
-                alt="Proposal Setup 4" 
+                src="/images/proposal_gallery_4.webp" 
+                alt="Marry Me giant light-up letters on beach at golden hour for romantic Cyprus proposal" 
+                loading="lazy"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </motion.div>
@@ -210,8 +235,9 @@ export default function ProposalStyling() {
               className="aspect-[4/5] overflow-hidden"
             >
               <img 
-                src="/images/experiences/proposals/inspo/proposal-inspo-5.jpg" 
-                alt="Proposal Setup 5" 
+                src="/images/proposal_gallery_5.webp" 
+                alt="I Do light-up letters beach proposal setup with red roses and candles at sunset in Cyprus" 
+                loading="lazy"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </motion.div>
@@ -223,13 +249,45 @@ export default function ProposalStyling() {
               className="aspect-[4/5] overflow-hidden"
             >
               <img 
-                src="/images/experiences/proposals/inspo/proposal-inspo-6.jpg" 
-                alt="Proposal Setup 6" 
+                src="/images/proposal_gallery_6.webp" 
+                alt="Will You Marry Me red heart arch with roses, candles, and red carpet aisle for romantic proposal" 
+                loading="lazy"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </motion.div>
-            */}
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 px-6 bg-luxury-blush/20">
+        <div className="container mx-auto max-w-3xl text-center">
+          <motion.h3 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="font-display text-3xl md:text-4xl text-luxury-text mb-8"
+          >
+            Ready to Pop the Question?
+          </motion.h3>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="font-body text-lg text-gray-600 mb-12"
+          >
+            Let us create the perfect romantic backdrop for your proposal. From intimate beach setups to grand gestures, we handle every detail.
+          </motion.p>
+          <Link href="/contact">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-12 py-4 bg-luxury-text text-white font-display uppercase tracking-widest text-sm hover:bg-luxury-gold transition-colors duration-300"
+            >
+              Get in Touch
+            </motion.button>
+          </Link>
         </div>
       </section>
 
