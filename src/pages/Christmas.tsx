@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -100,12 +100,21 @@ export default function Christmas() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/experiences/christmas/inspo/christmas_gallery_1.webp",
-    "/images/experiences/christmas/inspo/christmas_gallery_2.webp",
-    "/images/experiences/christmas/inspo/christmas_gallery_3.webp",
-    "/images/experiences/christmas/inspo/christmas_gallery_4.webp",
-    "/images/experiences/christmas/inspo/christmas_gallery_5.webp",
-    "/images/experiences/christmas/inspo/christmas_gallery_6.webp"
+    "/images/christmas_gallery_1.webp",
+    "/images/christmas_gallery_2.webp",
+    "/images/christmas_gallery_3.webp",
+    "/images/christmas_gallery_4.webp",
+    "/images/christmas_gallery_5.webp",
+    "/images/christmas_gallery_6.webp"
+  ];
+
+  const galleryAltTexts = [
+    "Outdoor Christmas party setup with inflatable Santa, snow globe, gingerbread house decorations in Cyprus",
+    "Festive Christmas cocktails display with elegant glassware and holiday drinks at Cyprus event",
+    "White bouncy castle with Santa inflatable and Christmas decorations for kids party in Cyprus",
+    "Elegant Christmas entrance decor with festive garland, nutcrackers, and red bows at Cyprus venue",
+    "Breakfast with Santa experience featuring children meeting Santa Claus and Mrs. Claus with Christmas tree",
+    "Santa and Mrs. Claus welcoming guests at festive Christmas entrance with garland and holiday decor"
   ];
 
   const openLightbox = (index: number) => {
@@ -116,8 +125,29 @@ export default function Christmas() {
   return (
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
-        <title>Luxury Christmas Styling | Dress That Day Cyprus</title>
-        <meta name="description" content="Magical Christmas styling in Cyprus. Transform your home or venue into a winter wonderland with our bespoke festive decor." />
+        <title>Christmas Party Styling Cyprus | Breakfast with Santa | Dress That Day</title>
+        <meta name="description" content="Magical Christmas party styling and Breakfast with Santa experiences in Cyprus. Transform your home or venue into a winter wonderland with festive decor, Santa visits, and holiday celebrations in Paphos and Limassol." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Christmas Party Styling Services",
+            "description": "Complete Christmas party styling including festive decorations, Breakfast with Santa experiences, corporate events, and residential holiday decor in Cyprus.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Dress That Day",
+              "url": "https://dressthatday.site"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Cyprus"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR"
+            }
+          })}
+        </script>
       </Helmet>
 
       <Navigation />
@@ -134,19 +164,6 @@ export default function Christmas() {
           text="Christmas"
           subtextBelow="Festive celebrations with luxury styling"
         />
-        <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-          <div className="max-w-4xl hidden">
-            <span className="block text-white/90 text-sm md:text-base tracking-[0.3em] uppercase mb-6 animate-fade-in-up font-light">
-              Festive Magic
-            </span>
-            <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight animate-fade-in-up delay-100 mb-8">
-              Christmas
-            </h1>
-            <p className="font-light text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-              The most wonderful time of the year, reimagined. We bring the magic of Christmas to life with elegant, sophisticated decor that sparkles with joy.
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* 2. Experience Introduction */}
@@ -160,10 +177,10 @@ export default function Christmas() {
           </h2>
           <div className="space-y-8 animate-fade-in-up delay-200">
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              Whether it's a grand corporate party or an intimate family gathering, our Christmas styling creates a warm, enchanting atmosphere. We use rich textures, metallic accents, and atmospheric lighting to transform any space.
+              Whether it's a grand corporate party or an intimate family gathering, our Christmas styling creates a warm, enchanting atmosphere. We use rich textures, metallic accents, and atmospheric lighting to transform any space into a festive wonderland.
             </p>
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              From towering trees adorned with bespoke ornaments to elegant table settings for your festive feast, we handle every detail so you can relax and enjoy the holiday spirit.
+              From towering trees adorned with bespoke ornaments to elegant table settings for your festive feast, we handle every detail so you can relax and enjoy the holiday spirit with your loved ones.
             </p>
           </div>
           <div className="w-px h-24 bg-luxury-gold/30 mx-auto mt-16" />
@@ -175,7 +192,7 @@ export default function Christmas() {
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Festive Inspiration</h3>
-            <p className="text-gray-500 font-light">Click to explore our setups</p>
+            <p className="text-gray-500 font-light">Click to explore our Christmas setups</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -188,13 +205,9 @@ export default function Christmas() {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 z-10" />
                 <img 
                   src={src} 
-                  alt={`Christmas setup ${index + 1}`}
+                  alt={galleryAltTexts[index]}
                   className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   loading="lazy"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.parentElement!.style.backgroundColor = '#f0f0f0';
-                  }}
                 />
                 <div className="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
                   <p className="text-white text-xs tracking-[0.2em] uppercase font-light drop-shadow-md">
@@ -207,12 +220,59 @@ export default function Christmas() {
         </div>
       </div>
 
-      {/* 4. Optional Experience-Specific Section */}
+      {/* 4. Breakfast with Santa Section */}
       <div className="bg-white py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-luxury-gold tracking-[0.2em] text-sm uppercase block mb-4">
+              Special Experience
+            </span>
+            <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-6">
+              Breakfast with Santa
+            </h3>
+            <p className="text-gray-600 font-light text-lg max-w-3xl mx-auto">
+              Create magical memories with our exclusive Breakfast with Santa experience. Children meet Santa Claus and Mrs. Claus in a beautifully decorated festive setting, complete with photo opportunities, gifts, and a delicious holiday breakfast.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
+              <img 
+                src="/images/christmas_gallery_5.webp" 
+                alt="Children enjoying Breakfast with Santa and Mrs. Claus with Christmas tree and festive decorations" 
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="space-y-6">
+              <h4 className="font-serif text-2xl text-gray-900">What's Included</h4>
+              <ul className="space-y-4">
+                {[
+                  "Personal meet & greet with Santa and Mrs. Claus",
+                  "Professional photo opportunities",
+                  "Festive breakfast spread for children and adults",
+                  "Gift from Santa for each child",
+                  "Christmas-themed decorations and ambiance",
+                  "Interactive storytelling and activities",
+                  "Memorable keepsake photos"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4 text-gray-600 font-light">
+                    <span className="w-1.5 h-1.5 rounded-full bg-luxury-gold mt-2.5 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 5. What's Included Section */}
+      <div className="bg-[#f8f5f2] py-24">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <h3 className="font-serif text-3xl text-gray-900">What's Included</h3>
+              <h3 className="font-serif text-3xl text-gray-900">Christmas Styling Services</h3>
               <ul className="space-y-4">
                 {[
                   "Bespoke Christmas tree decoration",
@@ -221,6 +281,7 @@ export default function Christmas() {
                   "Atmospheric lighting & candles",
                   "Corporate event styling",
                   "Residential holiday decor",
+                  "Breakfast with Santa experiences",
                   "Full setup & breakdown"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4 text-gray-600 font-light">
@@ -232,29 +293,30 @@ export default function Christmas() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/experiences/christmas/christmas_included.jpg" 
-                alt="Christmas details" 
-                className="w-full h-full object-cover"
+                src="/images/christmas_gallery_4.webp" 
+                alt="Elegant Christmas entrance decoration with festive garland, nutcrackers, and holiday styling" 
+                loading="lazy"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>
         </div>
       </div>
 
-      {/* 5. Unified Call-To-Action Block */}
+      {/* 6. Unified Call-To-Action Block */}
       <div className="relative py-32 bg-[#1a1a1a] text-white text-center px-6">
         <div className="max-w-3xl mx-auto space-y-8">
           <h2 className="font-serif text-4xl md:text-6xl leading-tight">
             Ready for Festive Magic?
           </h2>
           <p className="text-gray-400 font-light text-lg">
-            Let us transform your space for the holidays.
+            Let us transform your space for the holidays and create unforgettable Christmas memories.
           </p>
           <button 
-            onClick={() => setLocation("/design-your-day")}
+            onClick={() => setLocation("/contact")}
             className="inline-block px-12 py-5 bg-white text-black tracking-[0.2em] text-sm uppercase hover:bg-luxury-gold hover:text-white transition-colors duration-500 mt-8"
           >
-            Design Your Day
+            Get in Touch
           </button>
         </div>
       </div>
