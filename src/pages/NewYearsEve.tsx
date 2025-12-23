@@ -254,9 +254,9 @@ export default function NewYearsEve() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/experiences/new-years-eve/nye_included.webp"
+                src="/images/experiences/new-years-eve/inspo/nye_details.webp"
                 loading="lazy" 
-                alt="NYE details" 
+                alt="Luxury New Year's Eve table styling detail with gold charger, 2025 napkin ring, champagne flute, and Mediterranean sea view in Cyprus" 
                 className="w-full h-full object-cover"
               />
             </div>
