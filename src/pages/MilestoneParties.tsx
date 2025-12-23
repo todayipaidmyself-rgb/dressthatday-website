@@ -100,12 +100,21 @@ export default function MilestoneParties() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/birthday_gallery_1.jpg",
-    "/images/birthday_gallery_2.jpg",
-    "/images/birthday_gallery_3.jpg",
-    "/images/birthday_gallery_4.jpg",
-    "/images/birthday_gallery_5.jpg",
-    "/images/birthday_gallery_6.jpg"
+    "/images/milestone_gallery_1.webp",
+    "/images/milestone_gallery_2.webp",
+    "/images/milestone_gallery_3.webp",
+    "/images/milestone_gallery_4.webp",
+    "/images/milestone_gallery_5.webp",
+    "/images/milestone_gallery_6.webp"
+  ];
+
+  const galleryAltTexts = [
+    "Luxury 50th wedding anniversary celebration with elegant gold and ivory decor, premium floral installations, refined table settings in Cyprus",
+    "Sophisticated retirement party with navy blue, silver and cream decor, premium balloon installations, luxury table styling in Cyprus",
+    "Luxury 40th birthday milestone celebration with elegant black and gold decor, premium balloon garlands, dramatic floral centerpieces in Cyprus",
+    "Elegant high school graduation party with navy blue, white and gold decor, premium balloon installations, sophisticated table styling in Cyprus",
+    "Luxury sweet 16 birthday celebration with pink, rose gold and white decor, premium floral installations, elegant dessert display in Cyprus",
+    "Elegant coming of age 18th birthday celebration with champagne gold, white and blush pink decor, premium balloon installations in Cyprus"
   ];
 
   const openLightbox = (index: number) => {
@@ -116,8 +125,29 @@ export default function MilestoneParties() {
   return (
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
-        <title>Luxury Milestone Parties | Dress That Day Cyprus</title>
-        <meta name="description" content="Celebrate life's big moments in style. From 18th to 80th birthdays, anniversaries, and graduations, we create unforgettable milestone events in Cyprus." />
+        <title>Luxury Milestone Party Styling Cyprus | Anniversaries, Graduations, Sweet 16 & More | Dress That Day</title>
+        <meta name="description" content="Celebrate life's biggest moments with luxury milestone party styling in Cyprus. From 50th anniversaries to sweet 16, graduations to retirement parties, we create unforgettable milestone celebrations with premium decor, balloon installations, and sophisticated table styling in Paphos and Limassol." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Milestone Party Styling Services",
+            "description": "Complete milestone celebration styling including venue transformation, custom balloon installations, statement backdrops, table centerpieces, personalized signage, lighting design, and full event coordination for anniversaries, graduations, birthdays, and retirement parties in Cyprus.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Dress That Day",
+              "url": "https://dressthatday.site"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Cyprus"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR"
+            }
+          })}
+        </script>
       </Helmet>
 
       <Navigation />
@@ -134,19 +164,6 @@ export default function MilestoneParties() {
           lines={["Milestone", "Parties"]}
           subtextBelow="Celebrate life's important moments"
         />
-        <div className="absolute inset-0 flex items-center justify-center text-center px-4 hidden">
-          <div className="max-w-4xl">
-            <span className="block text-white/90 text-sm md:text-base tracking-[0.3em] uppercase mb-6 animate-fade-in-up font-light">
-              Unforgettable Moments
-            </span>
-            <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight animate-fade-in-up delay-100 mb-8">
-              Milestone Parties
-            </h1>
-            <p className="font-light text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-              Life's biggest moments deserve the grandest celebrations. We craft bespoke events that honor your journey and create memories to last a lifetime.
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* 2. Experience Introduction */}
@@ -160,10 +177,10 @@ export default function MilestoneParties() {
           </h2>
           <div className="space-y-8 animate-fade-in-up delay-200">
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              Whether it's a sweet 16, a 21st bash, a golden anniversary, or a retirement party, we understand the importance of these landmarks. Our styling elevates the occasion, adding layers of sophistication and personal touches.
+              Whether it's a sweet 16, graduation celebration, 40th birthday, 50th wedding anniversary, or retirement party, we understand the importance of these landmarks. Our luxury styling elevates each occasion with sophisticated decor, premium balloon installations, and refined table settings that honor the milestone you're celebrating.
             </p>
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              We blend celebratory energy with refined aesthetics, ensuring your milestone event is not just a party, but a tribute to the chapter you're celebrating.
+              We blend celebratory energy with refined aesthetics, creating milestone events that are not just parties, but tributes to life's most important chapters. From intimate family gatherings to grand celebrations, every detail is crafted to reflect the significance of your special moment.
             </p>
           </div>
           <div className="w-px h-24 bg-luxury-gold/30 mx-auto mt-16" />
@@ -174,8 +191,8 @@ export default function MilestoneParties() {
       <div className="bg-[#f8f5f2] py-24">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="text-center mb-16">
-            <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Celebration Inspiration</h3>
-            <p className="text-gray-500 font-light">Click to explore our setups</p>
+            <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Milestone Celebration Inspiration</h3>
+            <p className="text-gray-500 font-light">Click to explore our milestone party setups</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -188,16 +205,9 @@ export default function MilestoneParties() {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 z-10" />
                 <img 
                   src={src} 
-                  alt={`Milestone party setup ${index + 1}`}
+                  alt={galleryAltTexts[index]}
                   className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   loading="lazy"
-                  decoding="async"
-                  width={800}
-                  height={1000}
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.parentElement!.style.backgroundColor = '#f0f0f0';
-                  }}
                 />
                 <div className="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
                   <p className="text-white text-xs tracking-[0.2em] uppercase font-light drop-shadow-md">
@@ -210,7 +220,7 @@ export default function MilestoneParties() {
         </div>
       </div>
 
-      {/* 4. Optional Experience-Specific Section */}
+      {/* 4. What's Included Section */}
       <div className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -221,9 +231,10 @@ export default function MilestoneParties() {
                   "Venue styling & transformation",
                   "Custom balloon installations",
                   "Statement backdrops & photo zones",
-                  "Table centerpieces & linens",
-                  "Signage & personalized details",
-                  "Lighting & atmosphere",
+                  "Premium table centerpieces & linens",
+                  "Personalized signage & milestone details",
+                  "Professional lighting & atmosphere",
+                  "Complete vendor coordination",
                   "Full setup & breakdown"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4 text-gray-600 font-light">
@@ -235,9 +246,10 @@ export default function MilestoneParties() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/experiences/milestone-parties/milestone_included.jpg" 
-                alt="Milestone party details" 
-                className="w-full h-full object-cover"
+                src="/images/milestone_details.webp" 
+                alt="Luxury milestone celebration table styling details with gold charger plates, premium china, elegant napkin with milestone number in Cyprus" 
+                loading="lazy"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -248,10 +260,10 @@ export default function MilestoneParties() {
       <div className="relative py-32 bg-[#1a1a1a] text-white text-center px-6">
         <div className="max-w-3xl mx-auto space-y-8">
           <h2 className="font-serif text-4xl md:text-6xl leading-tight">
-            Ready to Celebrate?
+            Ready to Celebrate Your Milestone?
           </h2>
           <p className="text-gray-400 font-light text-lg">
-            Let us make your milestone unforgettable.
+            Let us make your milestone celebration unforgettable.
           </p>
           <button 
             onClick={() => setLocation("/design-your-day")}
