@@ -100,12 +100,12 @@ export default function MilestoneParties() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/milestone_gallery_1.webp",
-    "/images/milestone_gallery_2.webp",
-    "/images/milestone_gallery_3.webp",
-    "/images/milestone_gallery_4.webp",
-    "/images/milestone_gallery_5.webp",
-    "/images/milestone_gallery_6.webp"
+    "/images/milestone_gallery_1_v2.webp",
+    "/images/milestone_gallery_2_v2.webp",
+    "/images/milestone_gallery_3_v2.webp",
+    "/images/milestone_gallery_4_v2.webp",
+    "/images/milestone_gallery_5_v2.webp",
+    "/images/milestone_gallery_6_v2.webp"
   ];
 
   const galleryAltTexts = [
@@ -246,7 +246,7 @@ export default function MilestoneParties() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/milestone_details.webp" 
+                src="/images/milestone_details_v2.webp" 
                 alt="Luxury milestone celebration table styling details with gold charger plates, premium china, elegant napkin with milestone number in Cyprus" 
                 loading="lazy"
                 className="w-full h-full object-cover rounded-lg shadow-lg"

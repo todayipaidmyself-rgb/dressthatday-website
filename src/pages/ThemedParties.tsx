@@ -100,12 +100,12 @@ export default function ThemedParties() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/themed_gallery_1.webp",
-    "/images/themed_gallery_2.webp",
-    "/images/themed_gallery_3.webp",
-    "/images/themed_gallery_4.webp",
-    "/images/themed_gallery_5.webp",
-    "/images/themed_gallery_6.webp"
+    "/images/themed_gallery_1_v2.webp",
+    "/images/themed_gallery_2_v2.webp",
+    "/images/themed_gallery_3_v2.webp",
+    "/images/themed_gallery_4_v2.webp",
+    "/images/themed_gallery_5_v2.webp",
+    "/images/themed_gallery_6_v2.webp"
   ];
 
   const galleryAltTexts = [
@@ -246,7 +246,7 @@ export default function ThemedParties() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/themed_details.webp" 
+                src="/images/themed_details_v2.webp" 
                 alt="Luxury themed party table styling details with elegant place settings, gold accents, and Mediterranean Cyprus venue backdrop" 
                 loading="lazy"
                 className="w-full h-full object-cover rounded-lg shadow-lg"
