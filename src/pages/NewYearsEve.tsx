@@ -116,8 +116,23 @@ export default function NewYearsEve() {
   return (
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
-        <title>Luxury New Year's Eve | Dress That Day Cyprus</title>
-        <meta name="description" content="Spectacular New Year's Eve styling in Cyprus. Ring in the new year with glamour, sparkle, and unforgettable event design." />
+        <title>Luxury New Year's Eve Party Planning Cyprus | Dress That Day</title>
+        <meta name="description" content="Spectacular New Year's Eve party styling and event planning in Cyprus. Ring in the new year with glamorous decor, champagne towers, balloon drops, and unforgettable celebration design. NYE events in Limassol, Paphos, Larnaca, Nicosia." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "New Year's Eve Party Planning",
+            "description": "Spectacular New Year's Eve party styling and event planning in Cyprus with glamorous decor, champagne towers, and balloon installations.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Dress That Day",
+              "url": "https://dressthatday.com"
+            },
+            "areaServed": "Cyprus",
+            "serviceType": "Event Planning"
+          })}
+        </script>
       </Helmet>
 
       <Navigation />
@@ -188,7 +203,14 @@ export default function NewYearsEve() {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 z-10" />
                 <img 
                   src={src} 
-                  alt={`NYE setup ${index + 1}`}
+                  alt={[
+                    "Luxury black and gold New Year's Eve party decor setup in Cyprus with balloon garland and 2025 marquee numbers",
+                    "Elegant silver and white winter wonderland NYE celebration styling in Cyprus villa",
+                    "Rose gold and champagne New Year's Eve outdoor terrace decor with sea view in Cyprus",
+                    "Sophisticated navy blue and gold NYE party styling with illuminated 2025 letters in Cyprus",
+                    "Burgundy and gold luxe New Year's Eve celebration decor on Mediterranean terrace",
+                    "Emerald green and gold festive NYE party setup in Cyprus stone villa"
+                  ][index]}
                   className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   loading="lazy"
                   onError={(e) => {
@@ -232,7 +254,8 @@ export default function NewYearsEve() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/experiences/new-years-eve/nye_included.jpg" 
+                src="/images/experiences/new-years-eve/nye_included.webp"
+                loading="lazy" 
                 alt="NYE details" 
                 className="w-full h-full object-cover"
               />
