@@ -100,12 +100,21 @@ export default function ThemedParties() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/birthday_gallery_1.jpg",
-    "/images/birthday_gallery_2.jpg",
-    "/images/birthday_gallery_3.jpg",
-    "/images/birthday_gallery_4.jpg",
-    "/images/birthday_gallery_5.jpg",
-    "/images/birthday_gallery_6.jpg"
+    "/images/themed_gallery_1.webp",
+    "/images/themed_gallery_2.webp",
+    "/images/themed_gallery_3.webp",
+    "/images/themed_gallery_4.webp",
+    "/images/themed_gallery_5.webp",
+    "/images/themed_gallery_6.webp"
+  ];
+
+  const galleryAltTexts = [
+    "Luxury superhero themed party with elegant navy and gold decor, premium balloon installations, and sophisticated table styling in Cyprus",
+    "Elegant fairy tale princess themed party with pink and lavender color palette, premium floral arrangements, and upscale dessert display in Cyprus",
+    "Sophisticated jungle safari adventure party with emerald green and gold decor, tropical installations, and luxury table settings in Cyprus",
+    "Luxury under the sea mermaid themed party with turquoise and rose gold palette, iridescent balloons, and elegant ocean decor in Cyprus",
+    "Elegant space galaxy themed party with navy and silver decor, metallic balloon installations, and sophisticated cosmic styling in Cyprus",
+    "Luxury dinosaur prehistoric themed party with sage green and terracotta palette, tropical plants, and refined table styling in Cyprus"
   ];
 
   const openLightbox = (index: number) => {
@@ -116,8 +125,29 @@ export default function ThemedParties() {
   return (
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
-        <title>Luxury Themed Parties | Dress That Day Cyprus</title>
-        <meta name="description" content="Immersive themed party styling in Cyprus. From Great Gatsby galas to tropical luaus, we bring your creative vision to life with exceptional detail." />
+        <title>Luxury Themed Party Styling Cyprus | Superhero, Princess, Safari & More | Dress That Day</title>
+        <meta name="description" content="Immersive themed party styling in Cyprus. From superhero adventures to fairy tale princesses, jungle safaris to underwater worlds, we create unforgettable themed celebrations with premium decor, balloon installations, and luxury table styling in Paphos and Limassol." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Themed Party Styling Services",
+            "description": "Complete themed party styling including custom concept development, themed props and furniture rental, immersive backdrops and installations, table styling, lighting design, and full event coordination in Cyprus.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Dress That Day",
+              "url": "https://dressthatday.site"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Cyprus"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR"
+            }
+          })}
+        </script>
       </Helmet>
 
       <Navigation />
@@ -134,19 +164,6 @@ export default function ThemedParties() {
           lines={["Themed", "Parties"]}
           subtextBelow="Creative concepts brought to life"
         />
-        <div className="absolute inset-0 flex items-center justify-center text-center px-4 hidden">
-          <div className="max-w-4xl">
-            <span className="block text-white/90 text-sm md:text-base tracking-[0.3em] uppercase mb-6 animate-fade-in-up font-light">
-              Worlds of Imagination
-            </span>
-            <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight animate-fade-in-up delay-100 mb-8">
-              Themed Parties
-            </h1>
-            <p className="font-light text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-              Step into a different world. We transform venues into immersive experiences, bringing your chosen theme to life with creativity, precision, and flair.
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* 2. Experience Introduction */}
@@ -160,10 +177,10 @@ export default function ThemedParties() {
           </h2>
           <div className="space-y-8 animate-fade-in-up delay-200">
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              Whether it's a roaring 20s soirée, a tropical paradise, or a winter wonderland, we don't just decorate; we transport. Our themed styling is all about the details—props, backdrops, table settings—that collectively tell a compelling story.
+              Whether it's a superhero adventure, enchanted fairy tale, jungle safari, underwater world, cosmic galaxy, or prehistoric paradise, we don't just decorate—we transport your guests into immersive themed experiences. Our styling is all about the details: props, backdrops, balloon installations, and table settings that collectively tell a compelling story.
             </p>
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              We work with you to develop a cohesive concept that surprises and delights your guests, ensuring every corner of the event space contributes to the magic.
+              We work with you to develop a cohesive concept that surprises and delights your guests, ensuring every corner of the event space contributes to the magic. From intimate children's parties to grand themed galas, we bring your creative vision to life with exceptional attention to detail.
             </p>
           </div>
           <div className="w-px h-24 bg-luxury-gold/30 mx-auto mt-16" />
@@ -175,7 +192,7 @@ export default function ThemedParties() {
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Theme Inspiration</h3>
-            <p className="text-gray-500 font-light">Click to explore our setups</p>
+            <p className="text-gray-500 font-light">Click to explore our themed party setups</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -188,16 +205,9 @@ export default function ThemedParties() {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 z-10" />
                 <img 
                   src={src} 
-                  alt={`Themed party setup ${index + 1}`}
+                  alt={galleryAltTexts[index]}
                   className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   loading="lazy"
-                  decoding="async"
-                  width={800}
-                  height={1000}
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.parentElement!.style.backgroundColor = '#f0f0f0';
-                  }}
                 />
                 <div className="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
                   <p className="text-white text-xs tracking-[0.2em] uppercase font-light drop-shadow-md">
@@ -210,7 +220,7 @@ export default function ThemedParties() {
         </div>
       </div>
 
-      {/* 4. Optional Experience-Specific Section */}
+      {/* 4. What's Included Section */}
       <div className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -221,8 +231,9 @@ export default function ThemedParties() {
                   "Custom concept development",
                   "Themed props & furniture rental",
                   "Immersive backdrops & installations",
+                  "Premium balloon arrangements",
                   "Table styling & centerpieces",
-                  "Lighting design",
+                  "Lighting design & ambiance",
                   "Vendor coordination",
                   "Full setup & breakdown"
                 ].map((item, i) => (
@@ -235,9 +246,10 @@ export default function ThemedParties() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/experiences/themed-parties/themed_included.jpg" 
-                alt="Themed party details" 
-                className="w-full h-full object-cover"
+                src="/images/themed_details.webp" 
+                alt="Luxury themed party table styling details with custom plates, gold cutlery, and elegant centerpiece in Cyprus" 
+                loading="lazy"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -251,7 +263,7 @@ export default function ThemedParties() {
             Ready to Transform Your Event?
           </h2>
           <p className="text-gray-400 font-light text-lg">
-            Let us bring your wildest ideas to life.
+            Let us bring your wildest themed party ideas to life.
           </p>
           <button 
             onClick={() => setLocation("/design-your-day")}
