@@ -11,28 +11,43 @@ export default function About() {
     "@type": "AboutPage",
     "name": "About Dress That Day",
     "description": "Luxury event styling in Cyprus — designed with intention, built for emotion, finished for the camera.",
-    "publisher": {
+    "mainEntity": {
       "@type": "Organization",
       "name": "Dress That Day",
+      "description": "Cyprus's premier luxury event styling company specializing in weddings, proposals, birthdays, and bespoke celebrations",
+      "url": "https://dressthatday.site",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://dressthatday.com/images/logo_fresh.svg"
-      }
+        "url": "https://dressthatday.site/images/logo_fresh.svg"
+      },
+      "image": "https://dressthatday.site/images/about_hero_luxury_experiences.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CY",
+        "addressRegion": "Cyprus"
+      },
+      "sameAs": [
+        "https://www.instagram.com/dressthatday",
+        "https://www.facebook.com/dressthatday"
+      ],
+      "areaServed": "Cyprus",
+      "serviceType": ["Event Styling", "Wedding Planning", "Party Planning", "Event Design"]
     }
   };
 
   const experiences = [
+    { title: "Teepee Tent Parties", desc: "Magical indoor camping experiences for kids", link: "/teepee-parties" },
     { title: "Picnic Parties", desc: "Sunset setups with grazing and soft styling", link: "/picnic-parties" },
-    { title: "Bridal Showers", desc: "Elegant pre-wedding celebrations", link: "/baby-showers" },
     { title: "Birthday Celebrations", desc: "Milestone moments made magical", link: "/birthday-parties" },
-    { title: "Anniversaries", desc: "Romantic setups for your special day", link: "/contact" },
-    { title: "Baby Showers", desc: "Welcoming new arrivals with love", link: "/baby-showers" },
-    { title: "Corporate Events", desc: "Brand activations and professional gatherings", link: "/commercial-events" },
-    { title: "Private Dinners", desc: "Intimate tablescapes and dining experiences", link: "/contact" },
-    { title: "Balloon Styling", desc: "Organic installations and statement pieces", link: "/lights-balloons-decor" },
-    { title: "Floral & Light Styling", desc: "Premium florals and illuminated details", link: "/lights-balloons-decor" },
+    { title: "Weddings", desc: "Ceremony and reception styling perfection", link: "/weddings" },
     { title: "Engagements & Proposals", desc: "Beach, cliffside, and private villa setups", link: "/experiences/proposals" },
-    { title: "Wedding Styling", desc: "Ceremony and reception details", link: "/weddings" }
+    { title: "Christmas Parties", desc: "Festive celebrations and winter wonderlands", link: "/christmas" },
+    { title: "New Years Eve", desc: "Glamorous countdowns and midnight magic", link: "/new-years-eve" },
+    { title: "Corporate Events", desc: "Brand activations and professional gatherings", link: "/commercial-events" },
+    { title: "Baby Showers", desc: "Welcoming new arrivals with love", link: "/baby-showers" },
+    { title: "Balloon & Light Styling", desc: "Organic installations and illuminated details", link: "/lights-balloons-decor" },
+    { title: "Themed Parties", desc: "Custom concepts brought to life", link: "/themed-parties" },
+    { title: "Milestone Celebrations", desc: "Anniversaries, retirements, and special moments", link: "/milestone-parties" }
   ];
 
   const benefits = [
@@ -48,7 +63,7 @@ export default function About() {
     <Layout>
       <SEO 
         title="About Us | Luxury Event Styling Cyprus | Dress That Day"
-        description="Luxury event styling in Cyprus — designed with intention, built for emotion, finished for the camera. From first idea to final detail, we help you design a day that feels like you."
+        description="Discover Dress That Day - Cyprus's luxury event styling experts. From romantic proposals to elegant weddings, we create unforgettable experiences with premium decor, bespoke styling, and attention to every detail."
         canonical="/about"
         image="/images/about_hero_luxury_experiences.webp"
         schema={schema}
@@ -182,7 +197,8 @@ export default function About() {
           <div className="relative h-[400px] md:h-[500px] overflow-hidden group">
             <img 
               src="/images/about_proposal_scene.webp" 
-              alt="Luxury proposal setup" 
+              alt="Romantic luxury proposal setup with elegant decor, candles, and floral arrangements in Cyprus" 
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               data-scroll
               data-scroll-speed="-1"
@@ -191,7 +207,8 @@ export default function About() {
           <div className="relative h-[400px] md:h-[500px] overflow-hidden group">
             <img 
               src="/images/about_table_styling.webp" 
-              alt="Premium table styling" 
+              alt="Premium luxury table styling with fine dining setup, elegant tableware, and sophisticated decor" 
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               data-scroll
               data-scroll-speed="-1.5"
@@ -200,7 +217,8 @@ export default function About() {
           <div className="relative h-[400px] md:h-[500px] overflow-hidden group">
             <img 
               src="/images/about_balloon_installation.webp" 
-              alt="Balloon installation" 
+              alt="Organic balloon installation and arch with premium styling for luxury events in Cyprus" 
+              loading="lazy"
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               data-scroll
               data-scroll-speed="-1"
