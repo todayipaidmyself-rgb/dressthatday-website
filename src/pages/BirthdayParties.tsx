@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -100,12 +100,21 @@ export default function BirthdayParties() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/birthday_gallery_1.jpg",
-    "/images/birthday_gallery_2.jpg",
-    "/images/birthday_gallery_3.jpg",
-    "/images/birthday_gallery_4.jpg",
-    "/images/birthday_gallery_5.jpg",
-    "/images/birthday_gallery_6.jpg"
+    "/images/birthday_gallery_1.webp",
+    "/images/birthday_gallery_2.webp",
+    "/images/birthday_gallery_3.webp",
+    "/images/birthday_gallery_4.webp",
+    "/images/birthday_gallery_5.webp",
+    "/images/birthday_gallery_6.webp"
+  ];
+
+  const galleryAltTexts = [
+    "Elegant birthday party table setup with balloons, floral centerpieces, and luxury styling in Cyprus",
+    "Sophisticated birthday celebration decor with themed backdrop, balloon arrangements, and table styling",
+    "Luxury birthday party dessert table with cake display, balloons, and elegant decorations in Cyprus",
+    "Premium birthday party setup with custom signage, balloon installations, and festive table decor",
+    "Intimate birthday dinner party styling with candles, flowers, and elegant table settings in Cyprus",
+    "Grand birthday celebration with themed decorations, balloon arches, and luxury party styling"
   ];
 
   const openLightbox = (index: number) => {
@@ -116,8 +125,29 @@ export default function BirthdayParties() {
   return (
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
-        <title>Birthday Parties | Dress That Day Cyprus</title>
-        <meta name="description" content="Unforgettable birthday party styling in Cyprus. From intimate dinners to grand celebrations, we design bespoke events that reflect your unique style." />
+        <title>Birthday Party Styling Cyprus | Milestone Celebrations | Dress That Day</title>
+        <meta name="description" content="Unforgettable birthday party styling in Cyprus. From intimate dinners to grand celebrations, we design bespoke milestone birthday events with themed decor, balloon styling, and luxury table settings in Paphos and Limassol." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Birthday Party Styling Services",
+            "description": "Complete birthday party styling including themed decorations, balloon installations, table styling, custom signage, and milestone celebration planning in Cyprus.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Dress That Day",
+              "url": "https://dressthatday.site"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Cyprus"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "EUR"
+            }
+          })}
+        </script>
       </Helmet>
 
       <Navigation />
@@ -134,19 +164,6 @@ export default function BirthdayParties() {
           text="Birthdays"
           subtextBelow="Milestone celebrations styled with intention"
         />
-        <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-          <div className="max-w-4xl hidden">
-            <span className="block text-white/90 text-sm md:text-base tracking-[0.3em] uppercase mb-6 animate-fade-in-up font-light">
-              Celebrate You
-            </span>
-            <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight animate-fade-in-up delay-100 mb-8">
-              Birthday Parties
-            </h1>
-            <p className="font-light text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-              Creating unforgettable moments for another year around the sun.
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* 2. Experience Introduction */}
@@ -163,7 +180,7 @@ export default function BirthdayParties() {
               Whether you're planning a chic dinner party, a vibrant themed bash, or a relaxed outdoor gathering, our birthday styling services ensure your vision comes to life. We handle every aesthetic detail, allowing you to relax and enjoy the celebration with your guests.
             </p>
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              From milestone birthdays to intimate gatherings, we create atmospheres that are as unique as the guest of honor.
+              From milestone birthdays to intimate gatherings, we create atmospheres that are as unique as the guest of honor, making every moment memorable and Instagram-worthy.
             </p>
           </div>
           <div className="w-px h-24 bg-luxury-gold/30 mx-auto mt-16" />
@@ -175,7 +192,7 @@ export default function BirthdayParties() {
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="text-center mb-16">
             <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Party Inspiration</h3>
-            <p className="text-gray-500 font-light">Click to explore our setups</p>
+            <p className="text-gray-500 font-light">Click to explore our birthday setups</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -188,16 +205,9 @@ export default function BirthdayParties() {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 z-10" />
                 <img 
                   src={src} 
-                  alt={`Birthday party setup ${index + 1}`}
+                  alt={galleryAltTexts[index]}
                   className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   loading="lazy"
-                  decoding="async"
-                  width={800}
-                  height={1000}
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.parentElement!.style.backgroundColor = '#f0f0f0';
-                  }}
                 />
                 <div className="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
                   <p className="text-white text-xs tracking-[0.2em] uppercase font-light drop-shadow-md">
@@ -210,7 +220,7 @@ export default function BirthdayParties() {
         </div>
       </div>
 
-      {/* 4. Optional Experience-Specific Section */}
+      {/* 4. What's Included Section */}
       <div className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -235,9 +245,10 @@ export default function BirthdayParties() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/experiences/birthday-parties/birthday_included.jpg" 
-                alt="Birthday party details" 
-                className="w-full h-full object-cover"
+                src="/images/birthday_gallery_3.webp" 
+                alt="Luxury birthday party dessert table with cake display, balloons, and elegant decorations" 
+                loading="lazy"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
             </div>
           </div>
