@@ -109,12 +109,12 @@ export default function ThemedParties() {
   ];
 
   const galleryAltTexts = [
-    "Luxury superhero themed party with elegant navy and gold decor, premium balloon installations, and sophisticated table styling in Cyprus",
-    "Elegant fairy tale princess themed party with pink and lavender color palette, premium floral arrangements, and upscale dessert display in Cyprus",
-    "Sophisticated jungle safari adventure party with emerald green and gold decor, tropical installations, and luxury table settings in Cyprus",
-    "Luxury under the sea mermaid themed party with turquoise and rose gold palette, iridescent balloons, and elegant ocean decor in Cyprus",
-    "Elegant space galaxy themed party with navy and silver decor, metallic balloon installations, and sophisticated cosmic styling in Cyprus",
-    "Luxury dinosaur prehistoric themed party with sage green and terracotta palette, tropical plants, and refined table styling in Cyprus"
+    "Luxury Superman themed party with red, blue and gold balloon installations, city skyline backdrop, and elegant table styling in Cyprus Mediterranean villa",
+    "Elegant Marvel Avengers superhero themed party with dramatic comic book backdrop, red and black balloon garland, and sophisticated table settings in Cyprus",
+    "Sophisticated Moana tropical Polynesian themed party with turquoise and coral decor, tiki torches, and luxury island-inspired styling in Cyprus",
+    "Luxury Frozen winter wonderland themed party with ice blue and silver balloon installations, snowflake decorations, and elegant winter styling in Cyprus",
+    "Elegant Lightning McQueen Cars racing themed party with checkered flags, red and yellow decor, and sophisticated racing-inspired table settings in Cyprus",
+    "Luxury Snow White fairy tale themed party with red, yellow and blue balloon garland, apple decorations, and enchanted forest styling in Cyprus"
   ];
 
   const openLightbox = (index: number) => {
@@ -125,8 +125,8 @@ export default function ThemedParties() {
   return (
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
-        <title>Luxury Themed Party Styling Cyprus | Superhero, Princess, Safari & More | Dress That Day</title>
-        <meta name="description" content="Immersive themed party styling in Cyprus. From superhero adventures to fairy tale princesses, jungle safaris to underwater worlds, we create unforgettable themed celebrations with premium decor, balloon installations, and luxury table styling in Paphos and Limassol." />
+        <title>Luxury Themed Party Styling Cyprus | Superman, Marvel, Moana, Frozen & More | Dress That Day</title>
+        <meta name="description" content="Immersive character-themed party styling in Cyprus. From Superman and Marvel superheroes to Moana, Frozen, Cars, and fairy tale princesses, we create unforgettable themed celebrations with premium decor, balloon installations, and luxury table styling in Paphos and Limassol." />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -177,7 +177,7 @@ export default function ThemedParties() {
           </h2>
           <div className="space-y-8 animate-fade-in-up delay-200">
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              Whether it's a superhero adventure, enchanted fairy tale, jungle safari, underwater world, cosmic galaxy, or prehistoric paradise, we don't just decorate—we transport your guests into immersive themed experiences. Our styling is all about the details: props, backdrops, balloon installations, and table settings that collectively tell a compelling story.
+              Whether it's a Superman adventure, Marvel superhero celebration, Moana tropical paradise, Frozen winter wonderland, Lightning McQueen racing experience, or Snow White fairy tale, we don't just decorate—we transport your guests into immersive themed experiences. Our styling is all about the details: props, backdrops, balloon installations, and table settings that collectively tell a compelling story.
             </p>
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
               We work with you to develop a cohesive concept that surprises and delights your guests, ensuring every corner of the event space contributes to the magic. From intimate children's parties to grand themed galas, we bring your creative vision to life with exceptional attention to detail.
@@ -247,7 +247,7 @@ export default function ThemedParties() {
             <div className="relative aspect-square">
               <img 
                 src="/images/themed_details.webp" 
-                alt="Luxury themed party table styling details with custom plates, gold cutlery, and elegant centerpiece in Cyprus" 
+                alt="Luxury themed party table styling details with elegant place settings, gold accents, and Mediterranean Cyprus venue backdrop" 
                 loading="lazy"
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
