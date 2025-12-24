@@ -230,8 +230,14 @@ export default function Christmas() {
             <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-6">
               Breakfast with Santa
             </h3>
-            <p className="text-gray-600 font-light text-lg max-w-3xl mx-auto">
-              Create magical memories with our exclusive Breakfast with Santa experience. Children meet Santa Claus and Mrs. Claus in a beautifully decorated festive setting, complete with photo opportunities, gifts, and a delicious holiday breakfast.
+            <p className="text-gray-600 font-light text-lg max-w-3xl mx-auto leading-relaxed">
+              Each year, we proudly partner with <a href="https://www.lchateaucyprus.com" target="_blank" rel="noopener noreferrer" className="text-luxury-gold hover:underline font-medium">LChâteau</a> to host our annual charity Breakfast with Santa event, where <strong>all proceeds go to charity</strong>. This heartwarming experience brings together families, local vendors, and the community to create magical Christmas memories while supporting a worthy cause.
+            </p>
+            <p className="text-gray-600 font-light text-lg max-w-3xl mx-auto mt-6 leading-relaxed">
+              Our 2025 Breakfast with Santa was a complete <strong>sell-out success</strong>, welcoming hundreds of children and their families for an unforgettable morning. We invite vendors, sponsors, and local businesses to join us in making this annual tradition even more special. From catering and entertainment to photography and gift donations, there are countless ways to get involved and give back to the community.
+            </p>
+            <p className="text-gray-600 font-light text-lg max-w-3xl mx-auto mt-6 leading-relaxed">
+              Children meet Santa Claus and Mrs. Claus in a beautifully decorated festive setting at LChâteau's stunning venue, complete with professional photo opportunities, personalized gifts, and a delicious holiday breakfast. It's more than just an event—it's a celebration of community, generosity, and the true spirit of Christmas.
             </p>
           </div>
 
