@@ -478,3 +478,36 @@
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.8), 0 0 60px rgba(212, 175, 55, 0.5), 0 0 80px rgba(212, 175, 55, 0.3);
   }
 }
+
+/* Image Loading Placeholder - Luxury Pink Background */
+img {
+  background-color: #d4a5b8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+img[loading="lazy"] {
+  background-color: #d4a5b8;
+}
+
+/* Smooth fade-in for images */
+img:not([src]) {
+  opacity: 0;
+}
+
+img[src] {
+  opacity: 1;
+}
+
+/* Hero section backgrounds with placeholder */
+.hero-section,
+[class*="hero"],
+[class*="Hero"] {
+  background-color: #d4a5b8;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Background images with placeholder */
+[style*="background-image"] {
+  background-color: #d4a5b8 !important;
+  transition: opacity 0.3s ease-in-out;
+}
