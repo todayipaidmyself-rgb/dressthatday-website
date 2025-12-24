@@ -29,8 +29,14 @@ export default function ProposalStyling() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Luxury Proposal Styling Cyprus | Romantic Beach Proposals | Dress That Day</title>
-        <meta name="description" content="Create the perfect 'Yes' moment with our bespoke proposal styling in Cyprus. Romantic beach setups, private dinners, light-up letters, and breathtaking backdrops. Serving Paphos and Limassol." />
+        <title>Luxury Proposal Styling Cyprus | Romantic Beach Proposals Paphos & Limassol | Dress That Day</title>
+        <meta name="description" content="Create the perfect 'Yes' moment with our bespoke proposal styling in Cyprus. Romantic beach setups, Marry Me light-up letters, rose petal arrangements, private dinners, and breathtaking backdrops in Paphos and Limassol. We handle every detail for your life-changing moment." />
+        <meta name="keywords" content="Cyprus proposal styling, romantic beach proposal Cyprus, Paphos proposal setup, Limassol engagement styling, Marry Me lights Cyprus, beach proposal Paphos, romantic dinner setup, proposal planning Cyprus, engagement styling, Cyprus proposal planner" />
+        <meta property="og:title" content="Luxury Proposal Styling Cyprus | Romantic Beach Proposals" />
+        <meta property="og:description" content="Create the perfect 'Yes' moment with bespoke proposal styling in Cyprus. Beach setups, light-up letters, and breathtaking romantic backdrops." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/heroes/proposals-hero.webp" />
+        <link rel="canonical" href="https://dressthatday.com/experiences/proposal-styling" />
         <script type="application/ld+json">
           {JSON.stringify(schema)}
         </script>
@@ -104,47 +110,15 @@ export default function ProposalStyling() {
             We specialize in creating breathtaking proposal settings that capture the essence of your love story. From intimate beach picnics at sunset to grand gestures with light-up letters and thousands of rose petals, we handle every detail so you can focus on the moment. Whether you envision a romantic beach proposal in Paphos, a private dinner setup in Limassol, or a surprise engagement with stunning floral arrangements, we bring your vision to life.
           </motion.p>
           
-          <Link href="/contact">
+          <Link href="/design-your-day">
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="luxury-cta-btn px-12 py-4 bg-luxury-text text-white font-display uppercase tracking-widest text-sm hover:bg-luxury-gold transition-colors duration-300"
             >
-              Plan Your Proposal
+              Design Your Day
             </motion.button>
           </Link>
-        </div>
-      </section>
-
-      {/* Image Grid */}
-      <section className="py-12 px-4 bg-luxury-blush/10">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="aspect-[4/5] overflow-hidden"
-          >
-            <img 
-              src="/images/new_collection/20.webp" 
-              alt="Elegant Marry Me light-up letters for romantic proposal in Cyprus" 
-              loading="lazy"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-            />
-          </motion.div>
-          <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="aspect-[4/5] overflow-hidden mt-12 md:mt-24"
-          >
-            <img 
-              src="/images/blog_proposal_beach_sunset.webp" 
-              alt="Romantic beach proposal setup at sunset with elegant decor in Cyprus" 
-              loading="lazy"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-            />
-          </motion.div>
         </div>
       </section>
 
@@ -165,7 +139,7 @@ export default function ProposalStyling() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="font-display text-3xl md:text-4xl text-luxury-text"
+              className="font-serif text-3xl md:text-4xl text-luxury-text"
             >
               Real Proposal Moments
             </motion.h3>
@@ -279,13 +253,13 @@ export default function ProposalStyling() {
           >
             Let us create the perfect romantic backdrop for your proposal. From intimate beach setups to grand gestures, we handle every detail.
           </motion.p>
-          <Link href="/contact">
+          <Link href="/design-your-day">
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-12 py-4 bg-luxury-text text-white font-display uppercase tracking-widest text-sm hover:bg-luxury-gold transition-colors duration-300"
             >
-              Get in Touch
+              Design Your Day
             </motion.button>
           </Link>
         </div>
