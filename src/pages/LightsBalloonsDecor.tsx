@@ -169,21 +169,21 @@ export default function LightsBalloonsDecor() {
 
   // Image Collections - Complete Set
   const lightsImages = [
-    "/images/lights-decor/IMG_2228.jpg",
+    "/images/lights-decor/IMG_2228.webp",
     "/images/lights-decor/IMG_2229.JPG",
     "/images/lights-decor/IMG_2230.JPG",
-    "/images/lights-decor/IMG_8524.jpg",
+    "/images/lights-decor/IMG_8524.webp",
     "/images/lights-decor/IMG_8163.JPG",
-    "/images/lights-decor/8cbf57def198102608709aac1848afc7.jpg",
-    "/images/lights-decor/2791548de8b44a95b1a031cb8a76f033-0001.jpg"
+    "/images/lights-decor/8cbf57def198102608709aac1848afc7.webp",
+    "/images/lights-decor/2791548de8b44a95b1a031cb8a76f033-0001.webp"
   ];
 
   const wordsImages = [
-    "/images/lights-decor/SEA YOU BEACH BAR MARRY ME CYPRUS 13.png",
+    "/images/lights-decor/SEA YOU BEACH BAR MARRY ME CYPRUS 13.webp",
     "/images/lights-decor/IMG_2068.JPG",
     "/images/lights-decor/IMG_0400.JPG",
     "/images/lights-decor/Santa Marina Villa Paphos Marry Me Cyprus 23.JPG",
-    "/images/lights-decor/C286468B-F893-401A-A3FE-DCB3A6221F92.jpg"
+    "/images/lights-decor/C286468B-F893-401A-A3FE-DCB3A6221F92.webp"
   ];
 
   const balloonsImages = [
@@ -203,10 +203,10 @@ export default function LightsBalloonsDecor() {
     "/images/lights-decor/IMG_6739.JPG",
     "/images/lights-decor/IMG_6744.JPG",
     "/images/lights-decor/IMG_6745.JPG",
-    "/images/lights-decor/MMCA-27.jpg",
-    "/images/lights-decor/MMCA-30.jpg",
-    "/images/lights-decor/MMC-Christening Setup Alassos-1.jpg",
-    "/images/lights-decor/MMC-Christening Setup Alassos-60.jpg"
+    "/images/lights-decor/MMCA-27.webp",
+    "/images/lights-decor/MMCA-30.webp",
+    "/images/lights-decor/MMC-Christening Setup Alassos-1.webp",
+    "/images/lights-decor/MMC-Christening Setup Alassos-60.webp"
   ];
 
   const decorImages = [

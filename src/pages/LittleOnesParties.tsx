@@ -106,9 +106,9 @@ export default function LittleOnesParties() {
     "/images/blog_kids_party_safari.webp",
     "/images/cyprus_kids_party_v2.webp",
     "/images/kids_tea_party.webp",
-    "/images/lights-balloons-decor/signature-experiences/superhero-themed-balloon-backdrop-kids-party.jpg",
-    "/images/lights-balloons-decor/signature-experiences/comic-book-superhero-balloon-arch-birthday.jpg",
-    "/images/lights-balloons-decor/signature-experiences/pastel-organic-balloon-birthday-arch.jpg"
+    "/images/lights-balloons-decor/signature-experiences/superhero-themed-balloon-backdrop-kids-party.webp",
+    "/images/lights-balloons-decor/signature-experiences/comic-book-superhero-balloon-arch-birthday.webp",
+    "/images/lights-balloons-decor/signature-experiences/pastel-organic-balloon-birthday-arch.webp"
   ];
 
   const openLightbox = (index: number) => {

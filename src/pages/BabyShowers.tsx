@@ -126,7 +126,7 @@ export default function BabyShowers() {
       <div className="relative h-[70vh] overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center transform scale-105 animate-slow-zoom"
-          style={{ backgroundImage: 'url("/images/experiences/baby-showers-hero.jpg")' }}
+          style={{ backgroundImage: 'url("/images/experiences/baby-showers-hero.webp")' }}
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 flex items-center justify-center text-center px-4">

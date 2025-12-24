@@ -44,7 +44,7 @@ export default function SeasonalEvents() {
           ref={heroRef}
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: 'url("/images/experiences/seasonal-general-luxury.jpg")',
+            backgroundImage: 'url("/images/experiences/seasonal-general-luxury.webp")',
             height: '120%' // Extra height for parallax
           }}
         />

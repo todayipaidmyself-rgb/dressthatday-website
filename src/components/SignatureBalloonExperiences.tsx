@@ -87,21 +87,21 @@ export default function SignatureBalloonExperiences() {
   // Image Data Mapping based on filenames
   const allImages = [
     // Luxury Balloon Installations
-    { src: "/images/lights-balloons-decor/signature-experiences/balloon-ceiling-canopy-purple-luxury-event.jpg", category: "Luxury Balloon Installations", alt: "Purple Balloon Ceiling Canopy" },
-    { src: "/images/lights-balloons-decor/signature-experiences/statement-organic-balloon-arch-luxury-event.jpg", category: "Luxury Balloon Installations", alt: "Statement Organic Balloon Arch" },
-    { src: "/images/lights-balloons-decor/signature-experiences/luxury-organic-balloon-garland-rose-gold.jpg", category: "Luxury Balloon Installations", alt: "Luxury Rose Gold Balloon Garland" },
-    { src: "/images/lights-balloons-decor/signature-experiences/luxury-organic-balloon-ring-arch-blush.jpg", category: "Luxury Balloon Installations", alt: "Luxury Blush Balloon Ring Arch" },
+    { src: "/images/lights-balloons-decor/signature-experiences/balloon-ceiling-canopy-purple-luxury-event.webp", category: "Luxury Balloon Installations", alt: "Purple Balloon Ceiling Canopy" },
+    { src: "/images/lights-balloons-decor/signature-experiences/statement-organic-balloon-arch-luxury-event.webp", category: "Luxury Balloon Installations", alt: "Statement Organic Balloon Arch" },
+    { src: "/images/lights-balloons-decor/signature-experiences/luxury-organic-balloon-garland-rose-gold.webp", category: "Luxury Balloon Installations", alt: "Luxury Rose Gold Balloon Garland" },
+    { src: "/images/lights-balloons-decor/signature-experiences/luxury-organic-balloon-ring-arch-blush.webp", category: "Luxury Balloon Installations", alt: "Luxury Blush Balloon Ring Arch" },
     
     // Organic Balloon Backdrops
-    { src: "/images/lights-balloons-decor/signature-experiences/botanical-organic-balloon-arch-white-gold.jpg", category: "Organic Balloon Backdrops", alt: "Botanical Organic Balloon Arch" },
-    { src: "/images/lights-balloons-decor/signature-experiences/baby-shower-organic-balloon-arch-pink.jpg", category: "Organic Balloon Backdrops", alt: "Baby Shower Organic Balloon Arch" },
-    { src: "/images/lights-balloons-decor/signature-experiences/bridal-shower-organic-balloon-feature-pink.jpg", category: "Organic Balloon Backdrops", alt: "Bridal Shower Balloon Feature" },
-    { src: "/images/lights-balloons-decor/signature-experiences/organic-balloon-arch-dessert-cart-baby-blue-gold.jpg", category: "Organic Balloon Backdrops", alt: "Organic Balloon Arch with Dessert Cart" },
-    { src: "/images/lights-balloons-decor/signature-experiences/organic-balloon-garland-table-styling.jpg", category: "Organic Balloon Backdrops", alt: "Organic Balloon Garland Table Styling" },
+    { src: "/images/lights-balloons-decor/signature-experiences/botanical-organic-balloon-arch-white-gold.webp", category: "Organic Balloon Backdrops", alt: "Botanical Organic Balloon Arch" },
+    { src: "/images/lights-balloons-decor/signature-experiences/baby-shower-organic-balloon-arch-pink.webp", category: "Organic Balloon Backdrops", alt: "Baby Shower Organic Balloon Arch" },
+    { src: "/images/lights-balloons-decor/signature-experiences/bridal-shower-organic-balloon-feature-pink.webp", category: "Organic Balloon Backdrops", alt: "Bridal Shower Balloon Feature" },
+    { src: "/images/lights-balloons-decor/signature-experiences/organic-balloon-arch-dessert-cart-baby-blue-gold.webp", category: "Organic Balloon Backdrops", alt: "Organic Balloon Arch with Dessert Cart" },
+    { src: "/images/lights-balloons-decor/signature-experiences/organic-balloon-garland-table-styling.webp", category: "Organic Balloon Backdrops", alt: "Organic Balloon Garland Table Styling" },
 
     // Themed Balloon Experiences
-    { src: "/images/lights-balloons-decor/signature-experiences/superhero-themed-balloon-backdrop-kids-party.jpg", category: "Themed Balloon Experiences", alt: "Superhero Themed Balloon Backdrop" },
-    { src: "/images/lights-balloons-decor/signature-experiences/metallic-balloon-ring-arch-blue-celebration.jpg", category: "Themed Balloon Experiences", alt: "Metallic Blue Celebration Arch" },
+    { src: "/images/lights-balloons-decor/signature-experiences/superhero-themed-balloon-backdrop-kids-party.webp", category: "Themed Balloon Experiences", alt: "Superhero Themed Balloon Backdrop" },
+    { src: "/images/lights-balloons-decor/signature-experiences/metallic-balloon-ring-arch-blue-celebration.webp", category: "Themed Balloon Experiences", alt: "Metallic Blue Celebration Arch" },
   ];
 
   const filteredImages = allImages.filter(img => img.category === activeCategory);

@@ -116,25 +116,25 @@ export default function Home() {
     {
       title: "Little Un's Parties",
       description: "Where childhood wonder is spun into sophisticated, magical celebrations.",
-      image: "/images/occasions-little-ones.jpg",
+      image: "/images/occasions-little-ones.webp",
       link: "/little-uns-parties"
     },
     {
       title: "Teepee & Tent Parties",
       description: "Our iconic, immersive sleepover experiences, reimagined with luxury.",
-      image: "/images/occasions-teepee.jpg",
+      image: "/images/occasions-teepee.webp",
       link: "/teepee-tent-parties"
     },
     {
       title: "Picnic Parties",
       description: "Elegant alfresco dining, from sun-drenched gardens to sunset-kissed beaches.",
-      image: "/images/occasions-picnic.jpg",
+      image: "/images/occasions-picnic.webp",
       link: "/picnic-parties"
     },
     {
       title: "Proposal Styling",
       description: "The ultimate romantic gesture, meticulously crafted to ensure an unforgettable 'yes'.",
-      image: "/images/occasions-proposals.jpg",
+      image: "/images/occasions-proposals.webp",
       link: "/proposal-styling"
     }
   ];
@@ -322,7 +322,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="order-2 lg:order-1 relative h-[600px] w-full overflow-hidden" data-scroll data-scroll-speed="1">
               <img 
-                src="/images/versatility-elegance.jpg" 
+                src="/images/versatility-elegance.webp" 
                 alt="Luxury Event Setup" 
                 className="absolute inset-0 w-full h-full object-cover"
               />

@@ -44,7 +44,7 @@ export default function Christenings() {
           ref={heroRef}
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: 'url("/images/experiences/christening-luxury.jpg")',
+            backgroundImage: 'url("/images/experiences/christening-luxury.webp")',
             height: '120%' // Extra height for parallax
           }}
         />

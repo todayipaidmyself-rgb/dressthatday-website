@@ -93,23 +93,23 @@ export default function SignatureLightExperiences() {
   // Image Data Mapping based on filenames
   const allImages = [
     // Statement Light Letters
-    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-love-beach.jpg", category: "Statement Light Letters", alt: "LOVE Light Letters on Beach" },
-    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-love-night.jpg", category: "Statement Light Letters", alt: "LOVE Light Letters at Night" },
-    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-love-poolside.jpg", category: "Statement Light Letters", alt: "LOVE Light Letters Poolside" },
+    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-love-beach.webp", category: "Statement Light Letters", alt: "LOVE Light Letters on Beach" },
+    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-love-night.webp", category: "Statement Light Letters", alt: "LOVE Light Letters at Night" },
+    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-love-poolside.webp", category: "Statement Light Letters", alt: "LOVE Light Letters Poolside" },
     
     // Light Numbers & Milestone Styling
-    { src: "/images/lights-decor/signature-light-experiences/light-numbers-statement-1-birthday.jpg", category: "Light Numbers & Milestone Styling", alt: "Number 1 Birthday Light" },
-    { src: "/images/lights-decor/signature-light-experiences/light-numbers-statement-21-birthday.jpg", category: "Light Numbers & Milestone Styling", alt: "Number 21 Birthday Light" },
-    { src: "/images/lights-decor/signature-light-experiences/light-styling-elegant-baby-shower.jpg", category: "Light Numbers & Milestone Styling", alt: "Elegant Baby Shower Light Styling" },
-    { src: "/images/lights-decor/signature-light-experiences/light-styling-elegant-christening-detail.jpg", category: "Light Numbers & Milestone Styling", alt: "Christening Light Detail" },
-    { src: "/images/lights-decor/signature-light-experiences/light-styling-elegant-christening.jpg", category: "Light Numbers & Milestone Styling", alt: "Elegant Christening Light Styling" },
-    { src: "/images/lights-decor/signature-light-experiences/light-styling-elegant-first-birthday.jpg", category: "Light Numbers & Milestone Styling", alt: "First Birthday Light Styling" },
+    { src: "/images/lights-decor/signature-light-experiences/light-numbers-statement-1-birthday.webp", category: "Light Numbers & Milestone Styling", alt: "Number 1 Birthday Light" },
+    { src: "/images/lights-decor/signature-light-experiences/light-numbers-statement-21-birthday.webp", category: "Light Numbers & Milestone Styling", alt: "Number 21 Birthday Light" },
+    { src: "/images/lights-decor/signature-light-experiences/light-styling-elegant-baby-shower.webp", category: "Light Numbers & Milestone Styling", alt: "Elegant Baby Shower Light Styling" },
+    { src: "/images/lights-decor/signature-light-experiences/light-styling-elegant-christening-detail.webp", category: "Light Numbers & Milestone Styling", alt: "Christening Light Detail" },
+    { src: "/images/lights-decor/signature-light-experiences/light-styling-elegant-christening.webp", category: "Light Numbers & Milestone Styling", alt: "Elegant Christening Light Styling" },
+    { src: "/images/lights-decor/signature-light-experiences/light-styling-elegant-first-birthday.webp", category: "Light Numbers & Milestone Styling", alt: "First Birthday Light Styling" },
 
     // Proposal & Wedding Light Installations
-    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-beach.jpg", category: "Proposal & Wedding Light Installations", alt: "Marry Me Light Letters on Beach" },
-    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-proposal.jpg", category: "Proposal & Wedding Light Installations", alt: "Marry Me Proposal Setup" },
-    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-resort.jpg", category: "Proposal & Wedding Light Installations", alt: "Marry Me Resort Setup" },
-    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-sunset.jpg", category: "Proposal & Wedding Light Installations", alt: "Marry Me Sunset Setup" },
+    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-beach.webp", category: "Proposal & Wedding Light Installations", alt: "Marry Me Light Letters on Beach" },
+    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-proposal.webp", category: "Proposal & Wedding Light Installations", alt: "Marry Me Proposal Setup" },
+    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-resort.webp", category: "Proposal & Wedding Light Installations", alt: "Marry Me Resort Setup" },
+    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-sunset.webp", category: "Proposal & Wedding Light Installations", alt: "Marry Me Sunset Setup" },
   ];
 
   const filteredImages = allImages.filter(img => img.category === activeCategory);

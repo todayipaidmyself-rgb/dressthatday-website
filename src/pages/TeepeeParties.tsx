@@ -46,7 +46,7 @@ export default function TeepeeParties() {
       <div className="relative h-[70vh] overflow-hidden" data-page="TeepeeParties">
         <div 
           className="absolute inset-0 bg-cover bg-center transform scale-105 animate-slow-zoom"
-          style={{ backgroundImage: 'url("/images/teepee-parties-hero.jpg")' }}
+          style={{ backgroundImage: 'url("/images/teepee-parties-hero.webp")' }}
         />
         <div className="absolute inset-0 bg-black/30" />
         <PageHeading
@@ -145,32 +145,32 @@ export default function TeepeeParties() {
               {
                 title: "Celebration Cakes",
                 desc: "In collaboration with Love Island Cakes, we design bespoke celebration cakes to perfectly complement your party theme.",
-                img: "/images/experiences/teepee-enhancements/cake.jpg"
+                img: "/images/experiences/teepee-enhancements/cake.webp"
               },
               {
                 title: "Mini Makeovers",
                 desc: "A little pampering for little guests. Our mini makeover experience is fit for a princess and adds a touch of fun and sparkle to any sleepover.",
-                img: "/images/experiences/teepee-enhancements/makeover.jpg"
+                img: "/images/experiences/teepee-enhancements/makeover.webp"
               },
               {
                 title: "Light Up Numbers",
                 desc: "Make their age shine with our 4ft light-up numbers featuring bright white fairground bulbs. Available numbers: 1–18",
-                img: "/images/experiences/teepee-enhancements/numbers.jpg"
+                img: "/images/experiences/teepee-enhancements/numbers.webp"
               },
               {
                 title: "Sweet Treats",
                 desc: "Delight the children with sweet carts and personalised treat bags, styled to suit your chosen theme.",
-                img: "/images/experiences/teepee-enhancements/sweets.jpg"
+                img: "/images/experiences/teepee-enhancements/sweets.webp"
               },
               {
                 title: "Movie Night",
                 desc: "Create a Hollywood-style cinema sleepover. In partnership with Mini Mania, our movie night package brings the big-screen experience home.",
-                img: "/images/experiences/teepee-enhancements/movie.jpg"
+                img: "/images/experiences/teepee-enhancements/movie.webp"
               },
               {
                 title: "Afternoon Tea",
                 desc: "Let the little ladies ‘do lunch’ with a traditional afternoon tea, beautifully themed to match your sleepover or party.",
-                img: "/images/experiences/teepee-enhancements/tea.jpg"
+                img: "/images/experiences/teepee-enhancements/tea.webp"
               }
             ].map((item, index) => (
               <div key={index} className="group relative aspect-[4/5] overflow-hidden bg-gray-100">

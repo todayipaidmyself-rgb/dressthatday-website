@@ -44,7 +44,7 @@ export default function KidsParties() {
           ref={heroRef}
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: 'url("/images/experiences/kids-parties-hero.jpg")',
+            backgroundImage: 'url("/images/experiences/kids-parties-hero.webp")',
             height: '120%' // Extra height for parallax
           }}
         />

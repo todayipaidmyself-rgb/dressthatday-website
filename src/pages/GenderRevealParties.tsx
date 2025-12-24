@@ -44,7 +44,7 @@ export default function GenderRevealParties() {
           ref={heroRef}
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: 'url("/images/experiences/gender-reveal-luxury.jpg")',
+            backgroundImage: 'url("/images/experiences/gender-reveal-luxury.webp")',
             height: '120%' // Extra height for parallax
           }}
         />

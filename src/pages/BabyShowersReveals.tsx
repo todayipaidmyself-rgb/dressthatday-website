@@ -18,7 +18,7 @@ export default function BabyShowersReveals() {
       <section className="relative h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/experiences/baby-showers-hero.jpg" 
+            src="/images/experiences/baby-showers-hero.webp" 
             alt="Luxury Baby Shower" 
             className="w-full h-full object-cover"
           />

@@ -134,7 +134,7 @@ export default function PicnicParties() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <HeroOverlay
-          imagePath="/images/picnic-parties-hero-text-overlay.png"
+          imagePath="/images/picnic-parties-hero-text-overlay.webp"
           altText="Picnic Parties"
           subtextBelow="Sophisticated outdoor dining experiences designed for connection and celebration."
         />

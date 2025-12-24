@@ -18,7 +18,7 @@ export default function LightUpLetters() {
       <section className="relative h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/images/experiences/light-up-letters-hero.jpg" 
+            src="/images/experiences/light-up-letters-hero.webp" 
             alt="Light Up Letters" 
             className="w-full h-full object-cover"
           />
