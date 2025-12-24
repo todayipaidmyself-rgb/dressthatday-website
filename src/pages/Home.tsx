@@ -34,13 +34,13 @@ export default function Home() {
 
   const heroSlides = [
     '/images/gallery_proposal_setup.webp', // Little Prince Christening - UNCHANGED
-    '/images/hero-slide-2.png', // Christmas Parties
-    '/images/hero-slide-3.png', // Christmas Parties v2
-    '/images/hero-slide-4.png', // New Year's Eve
-    '/images/hero-slide-5.png', // Proposals
-    '/images/hero-slide-6.png', // Lights, Balloons & Event Decor
-    '/images/hero-slide-7.png', // Themed Parties
-    '/images/hero-slide-8.png' // Gender Reveal
+    '/images/hero-slide-2.webp', // Christmas Parties
+    '/images/hero-slide-3.webp', // Christmas Parties v2
+    '/images/hero-slide-4.webp', // New Year's Eve
+    '/images/hero-slide-5.webp', // Proposals
+    '/images/hero-slide-6.webp', // Lights, Balloons & Event Decor
+    '/images/hero-slide-7.webp', // Themed Parties
+    '/images/hero-slide-8.webp' // Gender Reveal
   ];
 
   const subtexts = [
