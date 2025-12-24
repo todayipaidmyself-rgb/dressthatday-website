@@ -479,14 +479,15 @@
   }
 }
 
-/* Image Loading Placeholder - Luxury Pink Background */
-img {
-  background-color: #d4a5b8;
+/* Image Loading Placeholder - Soft Luxury Pink Background */
+/* Only apply to content images, not logos or icons */
+img:not([class*="logo"]):not([class*="icon"]):not([alt*="logo"]):not([alt*="icon"]) {
+  background-color: #e8c5d5;
   transition: opacity 0.3s ease-in-out;
 }
 
-img[loading="lazy"] {
-  background-color: #d4a5b8;
+img[loading="lazy"]:not([class*="logo"]):not([class*="icon"]) {
+  background-color: #e8c5d5;
 }
 
 /* Smooth fade-in for images */
@@ -496,18 +497,4 @@ img:not([src]) {
 
 img[src] {
   opacity: 1;
-}
-
-/* Hero section backgrounds with placeholder */
-.hero-section,
-[class*="hero"],
-[class*="Hero"] {
-  background-color: #d4a5b8;
-  transition: background-color 0.3s ease-in-out;
-}
-
-/* Background images with placeholder */
-[style*="background-image"] {
-  background-color: #d4a5b8 !important;
-  transition: opacity 0.3s ease-in-out;
 }
