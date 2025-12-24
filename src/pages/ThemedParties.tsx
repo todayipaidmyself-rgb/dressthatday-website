@@ -253,8 +253,8 @@ export default function ThemedParties() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/themed_details_v2.webp" 
-                alt="Luxury themed party table styling details with elegant place settings, gold accents, and Mediterranean Cyprus venue backdrop" 
+                src="/images/themed_parties_detail.webp" 
+                alt="Professional event stylist hands arranging colorful themed party decor with superhero masks, princess crowns, Disney props, balloons and elegant table settings in sunny Cyprus" 
                 loading="lazy"
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />

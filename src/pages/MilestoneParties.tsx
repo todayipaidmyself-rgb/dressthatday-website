@@ -253,8 +253,8 @@ export default function MilestoneParties() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/milestone_details_v2.webp" 
-                alt="Luxury milestone celebration table styling details with gold charger plates, premium china, elegant napkin with milestone number in Cyprus" 
+                src="/images/milestone_parties_detail.webp" 
+                alt="Luxury milestone celebration table setting with gold charger plates, white roses eucalyptus garland, pillar candles, crystal glassware in elegant Cyprus outdoor terrace" 
                 loading="lazy"
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
