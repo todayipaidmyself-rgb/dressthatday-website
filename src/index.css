@@ -480,35 +480,4 @@
 }
 
 /* Image Loading Placeholder - Soft Luxury Pink Background */
-/* Only apply to content images, not logos or icons */
-img:not([class*="logo"]):not([class*="icon"]):not([alt*="logo"]):not([alt*="icon"]) {
-  background-color: #e8c5d5;
-  transition: opacity 0.3s ease-in-out;
-}
 
-img[loading="lazy"]:not([class*="logo"]):not([class*="icon"]) {
-  background-color: #e8c5d5;
-}
-
-/* Smooth fade-in for images */
-img:not([src]) {
-  opacity: 0;
-}
-
-img[src] {
-  opacity: 1;
-}
-
-/* Background image placeholder for hero slides and other bg images */
-.bg-cover,
-.bg-center,
-[class*="bg-"],
-[style*="backgroundImage"],
-[style*="background-image"] {
-  background-color: #e8c5d5 !important;
-}
-
-/* Ensure hero slides have the placeholder */
-[data-scroll] {
-  background-color: #e8c5d5;
-}
