@@ -65,12 +65,15 @@ export default function Gallery() {
         description="Browse our authentic portfolio of luxury event styling in Cyprus. Real photos from weddings, proposals, birthday parties, picnics, and special celebrations styled by Dress That Day."
         canonical="/gallery"
         schema={schema}
+        keywords="event styling gallery Cyprus, party styling portfolio Cyprus, wedding styling photos Cyprus, event planner gallery Paphos, luxury event photos Limassol, birthday party gallery Cyprus, proposal styling portfolio Cyprus, picnic party photos Cyprus, event design gallery Cyprus, party planner portfolio Cyprus, celebration styling photos Cyprus, event decoration gallery Cyprus"
       />
       {/* Hero Section */}
       <section className="relative h-[70vh] md:h-[80vh] bg-luxury-blush overflow-hidden flex items-center justify-center" data-scroll-section>
         <PageHeading
           text="Gallery"
           subtextBelow="Authentic moments from real events we've styled"
+          textColor="text-black"
+          subtextColor="text-black/80"
         />
       </section>
 

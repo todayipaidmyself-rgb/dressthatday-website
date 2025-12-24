@@ -7,6 +7,7 @@ interface SEOProps {
   type?: string;
   image?: string;
   schema?: object;
+  keywords?: string;
 }
 
 export default function SEO({ 
@@ -15,7 +16,8 @@ export default function SEO({
   canonical, 
   type = 'website',
   image = '/images/proposal_setup_roses.webp',
-  schema 
+  schema,
+  keywords
 }: SEOProps) {
   const siteName = 'Dress That Day';
   // If title already contains the pipe, don't append site name again
@@ -29,6 +31,7 @@ export default function SEO({
       {/* Standard Metadata */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={url} />
 
       {/* Open Graph */}

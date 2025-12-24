@@ -7,6 +7,8 @@ interface PageHeadingProps {
   lines?: string[];
   subtextBelow?: string;
   className?: string;
+  textColor?: string;
+  subtextColor?: string;
 }
 
 /**
@@ -26,7 +28,9 @@ export default function PageHeading({
   text,
   lines,
   subtextBelow,
-  className 
+  className,
+  textColor = "text-white",
+  subtextColor = "text-white/90"
 }: PageHeadingProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -92,7 +96,7 @@ export default function PageHeading({
       {/* Page Heading - Live text with BrittanySignature font */}
       <h1
         ref={headingRef}
-        className="page-heading"
+        className={cn("page-heading", textColor)}
       >
         {lines && lines.length > 0 ? (
           lines.map((line, index) => <span key={index}>{line}</span>)
@@ -107,7 +111,7 @@ export default function PageHeading({
           ref={subtextRef}
           className={cn(
             // Typography
-            "text-white/90 text-center font-light",
+            subtextColor, "text-center font-light",
             // Responsive sizing
             "text-sm md:text-base lg:text-lg",
             // Spacing and constraints

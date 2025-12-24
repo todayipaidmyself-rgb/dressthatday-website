@@ -195,6 +195,7 @@ export default function Blog() {
         title="Event Styling Blog | Dress That Day Cyprus"
         description="Expert tips, inspiration, and guides for luxury events in Cyprus. Read about kids parties, weddings, proposals, and more."
         canonical="/blog"
+        keywords="event styling blog Cyprus, party planning tips Cyprus, luxury event inspiration Cyprus, wedding blog Cyprus, kids party ideas Cyprus, proposal planning Cyprus, event styling guide Cyprus, party styling tips Paphos, event planning blog Limassol, celebration ideas Cyprus, event design blog Cyprus, party inspiration Cyprus"
       />
 
       {/* Hero Section */}
@@ -206,6 +207,8 @@ export default function Blog() {
         <PageHeading
           text="Journal"
           subtextBelow="Stories, inspiration, and behind-the-scenes moments"
+          textColor="text-black"
+          subtextColor="text-black/80"
         />
         
         <div className="container mx-auto px-6 relative z-10 text-center">
