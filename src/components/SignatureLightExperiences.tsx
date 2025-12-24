@@ -96,7 +96,6 @@ export default function SignatureLightExperiences() {
     { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-love-beach.jpg", category: "Statement Light Letters", alt: "LOVE Light Letters on Beach" },
     { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-love-night.jpg", category: "Statement Light Letters", alt: "LOVE Light Letters at Night" },
     { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-love-poolside.jpg", category: "Statement Light Letters", alt: "LOVE Light Letters Poolside" },
-    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-m-e-beach.jpg", category: "Statement Light Letters", alt: "M & E Light Letters on Beach" },
     
     // Light Numbers & Milestone Styling
     { src: "/images/lights-decor/signature-light-experiences/light-numbers-statement-1-birthday.jpg", category: "Light Numbers & Milestone Styling", alt: "Number 1 Birthday Light" },
@@ -111,7 +110,6 @@ export default function SignatureLightExperiences() {
     { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-proposal.jpg", category: "Proposal & Wedding Light Installations", alt: "Marry Me Proposal Setup" },
     { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-resort.jpg", category: "Proposal & Wedding Light Installations", alt: "Marry Me Resort Setup" },
     { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-marry-me-sunset.jpg", category: "Proposal & Wedding Light Installations", alt: "Marry Me Sunset Setup" },
-    { src: "/images/lights-decor/signature-light-experiences/light-letters-statement-i-do-beach.jpg", category: "Proposal & Wedding Light Installations", alt: "I Do Light Letters on Beach" },
   ];
 
   const filteredImages = allImages.filter(img => img.category === activeCategory);

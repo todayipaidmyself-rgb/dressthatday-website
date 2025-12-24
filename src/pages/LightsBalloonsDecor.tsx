@@ -231,8 +231,14 @@ export default function LightsBalloonsDecor() {
   return (
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
-        <title>Lights, Balloons & Event Decor | Dress That Day Cyprus</title>
-        <meta name="description" content="Luxury event styling in Cyprus. Illuminated letters, bespoke balloon installations, and elegant decor for weddings, proposals, and parties." />
+        <title>Lights, Balloons & Event Decor | Luxury Event Styling Cyprus | Dress That Day</title>
+        <meta name="description" content="Premium event styling services in Cyprus featuring illuminated marquee letters, organic balloon installations, table styling, floral design, and curated prop hire for weddings, proposals, birthdays, and milestone celebrations." />
+        <meta name="keywords" content="Cyprus event styling, marquee lights Cyprus, balloon installations Cyprus, luxury event decor, wedding lights Cyprus, proposal styling, table styling Cyprus, floral design Cyprus, event props Cyprus, organic balloon arches, themed balloon experiences" />
+        <meta property="og:title" content="Lights, Balloons & Event Decor | Dress That Day Cyprus" />
+        <meta property="og:description" content="Transform your Cyprus celebration with premium light installations, bespoke balloon styling, and elegant event decor." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/hero/lights-balloons-decor-hero.webp" />
+        <link rel="canonical" href="https://dressthatday.com/experiences/lights-balloons-event-decor" />
       </Helmet>
 
       <Navigation />
@@ -268,10 +274,10 @@ export default function LightsBalloonsDecor() {
             </p>
           </div>
           <button 
-            onClick={() => setLocation("/contact")}
+            onClick={() => setLocation("/design-your-day")}
             className="px-10 py-4 border border-white/30 text-white tracking-[0.2em] text-xs uppercase hover:bg-white hover:text-black transition-all duration-500 animate-fade-in-up delay-300 backdrop-blur-sm"
           >
-            Enquire About Availability
+            Design Your Day
           </button>
         </div>
       </div>
@@ -313,24 +319,54 @@ export default function LightsBalloonsDecor() {
           
           <EditorialSlider images={decorImages} id="decor" />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20 text-center">
-            <div className="space-y-4">
-              <h3 className="font-serif text-2xl">Table Styling</h3>
-              <p className="font-light text-gray-400 leading-relaxed max-w-xs mx-auto">
-                Exquisite tablescapes featuring fine linens, crystal glassware, and bespoke centerpieces.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
+            <div className="space-y-6">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/images/lights-balloons-decor/event-decor-table-styling.webp" 
+                  alt="Luxury table styling with fine linens, crystal glassware, and gold accents in Cyprus"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-serif text-2xl mb-3">Table Styling</h3>
+                <p className="font-light text-gray-400 leading-relaxed max-w-xs mx-auto">
+                  Exquisite tablescapes featuring fine linens, crystal glassware, and bespoke centerpieces.
+                </p>
+              </div>
             </div>
-            <div className="space-y-4">
-              <h3 className="font-serif text-2xl">Floral Design</h3>
-              <p className="font-light text-gray-400 leading-relaxed max-w-xs mx-auto">
-                Fresh, seasonal blooms arranged with an artistic eye to bring life and fragrance.
-              </p>
+            <div className="space-y-6">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/images/lights-balloons-decor/event-decor-floral-design.webp" 
+                  alt="Fresh seasonal floral arrangements with white roses and eucalyptus for Cyprus events"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-serif text-2xl mb-3">Floral Design</h3>
+                <p className="font-light text-gray-400 leading-relaxed max-w-xs mx-auto">
+                  Fresh, seasonal blooms arranged with an artistic eye to bring life and fragrance.
+                </p>
+              </div>
             </div>
-            <div className="space-y-4">
-              <h3 className="font-serif text-2xl">Prop Hire</h3>
-              <p className="font-light text-gray-400 leading-relaxed max-w-xs mx-auto">
-                Curated furniture and decorative accents that add character and define style.
-              </p>
+            <div className="space-y-6">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src="/images/lights-balloons-decor/event-decor-prop-hire.webp" 
+                  alt="Curated event furniture and decorative props for Cyprus luxury celebrations"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="font-serif text-2xl mb-3">Prop Hire</h3>
+                <p className="font-light text-gray-400 leading-relaxed max-w-xs mx-auto">
+                  Curated furniture and decorative accents that add character and define style.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -341,7 +377,7 @@ export default function LightsBalloonsDecor() {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{ 
-            backgroundImage: 'url("/images/lights-decor/IMG_6745.JPG")',
+            backgroundImage: 'url("/images/lights-decor/IMG_6715.JPG")',
           }}
         />
         <div className="absolute inset-0 bg-black/40" />
@@ -351,10 +387,10 @@ export default function LightsBalloonsDecor() {
             Let's Create Something<br/>Extraordinary
           </h2>
           <button 
-            onClick={() => setLocation("/contact")}
+            onClick={() => setLocation("/design-your-day")}
             className="px-12 py-5 bg-white text-black tracking-[0.2em] text-sm uppercase hover:bg-luxury-gold hover:text-white transition-colors duration-500"
           >
-            Enquire About Availability
+            Design Your Day
           </button>
         </div>
       </div>
