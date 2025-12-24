@@ -100,21 +100,21 @@ export default function ThemedParties() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/superman_party_2024.webp",
-    "/images/marvel_avengers_party_2024.webp",
-    "/images/moana_tropical_party_2024.webp",
-    "/images/frozen_winter_party_2024.webp",
-    "/images/cars_racing_party_2024.webp",
-    "/images/snowwhite_fairytale_party_2024.webp"
+    "/images/themed_marvel_party_6.webp",
+    "/images/themed_dc_party_10.webp",
+    "/images/themed_frozen_party_7.webp",
+    "/images/themed_moana_party_12.webp",
+    "/images/themed_disney_party_8.webp",
+    "/images/themed_princess_party_5.webp"
   ];
 
   const galleryAltTexts = [
-    "Luxury Superman themed party with red, blue and gold balloon installations, city skyline backdrop, and elegant table styling in Cyprus Mediterranean villa",
-    "Elegant Marvel Avengers superhero themed party with dramatic comic book backdrop, red and black balloon garland, and sophisticated table settings in Cyprus",
-    "Sophisticated Moana tropical Polynesian themed party with turquoise and coral decor, tiki torches, and luxury island-inspired styling in Cyprus",
-    "Luxury Frozen winter wonderland themed party with ice blue and silver balloon installations, snowflake decorations, and elegant winter styling in Cyprus",
-    "Elegant Lightning McQueen Cars racing themed party with checkered flags, red and yellow decor, and sophisticated racing-inspired table settings in Cyprus",
-    "Luxury Snow White fairy tale themed party with red, yellow and blue balloon garland, apple decorations, and enchanted forest styling in Cyprus"
+    "Marvel Avengers superhero themed 6th birthday party with red, blue, gold and black balloon installation, white marquee number 6 lights, Captain America shields and Iron Man elements in sunny Cyprus Mediterranean setting with palm trees",
+    "DC Comics superhero themed 10th birthday party with Batman, Superman, Wonder Woman and Flash elements, navy blue red yellow balloon garland, white marquee number 10 lights in bright Cyprus outdoor setting with sea views",
+    "Disney Frozen themed 7th birthday party with ice blue, purple and silver balloons, Elsa and Olaf elements, white marquee number 7 lights in warm sunny Cyprus Mediterranean setting with palm trees",
+    "Disney Moana tropical themed 12th birthday party with turquoise, coral and green balloon garland, tropical flowers and Polynesian patterns, white marquee number 12 lights in sunny Cyprus setting with palm trees and sea views",
+    "Classic Disney themed 8th birthday party with Mickey Mouse colors red yellow black, castle designs and Disney character elements, white marquee number 8 lights in bright Cyprus Mediterranean outdoor setting with palm trees",
+    "Princess themed 5th birthday party with soft pink, lavender and rose gold balloon garland, crowns and tiaras, white marquee number 5 lights in sunny Cyprus Mediterranean setting with elegant styling"
   ];
 
   const openLightbox = (index: number) => {

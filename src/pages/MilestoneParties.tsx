@@ -100,21 +100,21 @@ export default function MilestoneParties() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/anniversary_50th_party_2024.webp",
-    "/images/retirement_celebration_2024.webp",
-    "/images/birthday_40th_party_2024.webp",
-    "/images/graduation_party_2024.webp",
-    "/images/sweet16_birthday_2024.webp",
-    "/images/birthday_18th_party_2024.webp"
+    "/images/milestone_elegant_anniversary.webp",
+    "/images/milestone_retirement_celebration.webp",
+    "/images/milestone_40th_birthday.webp",
+    "/images/milestone_graduation_party.webp",
+    "/images/milestone_sweet16_birthday.webp",
+    "/images/milestone_18th_birthday.webp"
   ];
 
   const galleryAltTexts = [
-    "Luxury 50th wedding anniversary celebration with elegant gold and ivory decor, premium floral installations, refined table settings in Cyprus",
-    "Sophisticated retirement party with navy blue, silver and cream decor, premium balloon installations, luxury table styling in Cyprus",
-    "Luxury 40th birthday milestone celebration with elegant black and gold decor, premium balloon garlands, dramatic floral centerpieces in Cyprus",
-    "Elegant high school graduation party with navy blue, white and gold decor, premium balloon installations, sophisticated table styling in Cyprus",
-    "Luxury sweet 16 birthday celebration with pink, rose gold and white decor, premium floral installations, elegant dessert display in Cyprus",
-    "Elegant coming of age 18th birthday celebration with champagne gold, white and blush pink decor, premium balloon installations in Cyprus"
+    "Elegant anniversary celebration with champagne gold, blush pink and white balloon arch, white wooden marquee lights with diamond cabochon bulbs, palm trees and Mediterranean setting in sunny Cyprus",
+    "Sophisticated retirement party with navy blue, silver and white balloon installation, white wooden fairground marquee lights, elegant outdoor furniture setup with palm trees in bright Cyprus daylight",
+    "Stylish 40th birthday party with rose gold, copper and cream balloon garland, white wooden marquee lights with diamond effect bulbs, chic table arrangement with palm trees in sunny Cyprus Mediterranean setting",
+    "Celebratory graduation party with black, gold and white balloon arrangement, white wooden marquee lights with diamond cabochon bulbs, elegant outdoor setup with palm trees in bright Cyprus sunshine",
+    "Elegant Sweet 16 birthday with soft pink, lavender and white balloon installation, white wooden fairground marquee lights, sophisticated setup with palm trees in sunny Cyprus Mediterranean setting",
+    "Chic 18th birthday celebration with dusty rose, terracotta, sage green and cream balloon garland, white wooden marquee lights with diamond bulbs, modern elegant setup with palm trees in bright Cyprus daylight"
   ];
 
   const openLightbox = (index: number) => {
