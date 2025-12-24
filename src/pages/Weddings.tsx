@@ -126,7 +126,13 @@ export default function Weddings() {
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
         <title>Luxury Wedding Styling Cyprus | Wedding Planner Paphos Limassol | Dress That Day</title>
-        <meta name="description" content="Exquisite wedding styling and planning in Cyprus. From intimate ceremonies to grand receptions, we create breathtaking designs for your special day in Paphos and Limassol. Full venue styling, ceremony arches, reception decor." />
+        <meta name="description" content="Exquisite wedding styling and planning in Cyprus. From intimate beach ceremonies to grand ballroom receptions, we create breathtaking designs for your special day in Paphos and Limassol. Full venue styling, ceremony arches, floral arrangements, reception decor, and on-the-day coordination." />
+        <meta name="keywords" content="Cyprus wedding styling, wedding planner Cyprus, Paphos wedding planner, Limassol wedding styling, Cyprus wedding decorator, beach wedding Cyprus, luxury wedding Cyprus, wedding venue styling, ceremony arch Cyprus, wedding reception decor, Cyprus wedding coordinator, destination wedding Cyprus" />
+        <meta property="og:title" content="Luxury Wedding Styling Cyprus | Wedding Planner Paphos & Limassol" />
+        <meta property="og:description" content="Exquisite wedding styling and planning in Cyprus. From intimate ceremonies to grand receptions, we create breathtaking designs for your special day." />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/images/heroes/weddings-hero.webp" />
+        <link rel="canonical" href="https://dressthatday.com/experiences/weddings" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
