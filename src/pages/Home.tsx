@@ -190,6 +190,12 @@ export default function Home() {
             {subtexts[currentSlide]}
           </h2>
           
+          {/* Mobile-only CTA Button */}
+          <Link href="/design-your-day">
+            <button className="md:hidden hero-cta-button bg-luxury-gold text-luxury-text font-display uppercase tracking-wider px-8 py-4 rounded-full shadow-2xl hover:bg-white hover:text-luxury-gold transition-all duration-300 font-semibold text-sm">
+              Design Your Day
+            </button>
+          </Link>
           
         </div>
 
