@@ -100,12 +100,12 @@ export default function MilestoneParties() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/milestone_gallery_1_v2.webp?v=20251224",
-    "/images/milestone_gallery_2_v2.webp?v=20251224",
-    "/images/milestone_gallery_3_v2.webp?v=20251224",
-    "/images/milestone_gallery_4_v2.webp?v=20251224",
-    "/images/milestone_gallery_5_v2.webp?v=20251224",
-    "/images/milestone_gallery_6_v2.webp?v=20251224"
+    "/images/anniversary_50th_party_2024.webp",
+    "/images/retirement_celebration_2024.webp",
+    "/images/birthday_40th_party_2024.webp",
+    "/images/graduation_party_2024.webp",
+    "/images/sweet16_birthday_2024.webp",
+    "/images/birthday_18th_party_2024.webp"
   ];
 
   const galleryAltTexts = [
