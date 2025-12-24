@@ -498,3 +498,17 @@ img:not([src]) {
 img[src] {
   opacity: 1;
 }
+
+/* Background image placeholder for hero slides and other bg images */
+.bg-cover,
+.bg-center,
+[class*="bg-"],
+[style*="backgroundImage"],
+[style*="background-image"] {
+  background-color: #e8c5d5 !important;
+}
+
+/* Ensure hero slides have the placeholder */
+[data-scroll] {
+  background-color: #e8c5d5;
+}
