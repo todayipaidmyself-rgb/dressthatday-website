@@ -9,6 +9,7 @@ export default function Terms() {
       <SEO 
         title="Terms & Conditions | Dress That Day"
         description="Terms and conditions for Dress That Day luxury event styling services in Cyprus."
+        keywords="terms and conditions, event styling terms Cyprus, party planner terms, service terms Cyprus, event planning policies, booking terms Cyprus, Dress That Day policies"
       />
       
       {/* Hero Section */}

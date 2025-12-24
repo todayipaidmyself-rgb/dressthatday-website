@@ -90,6 +90,7 @@ export default function FAQ() {
       <SEO 
         title="Frequently Asked Questions | Dress That Day"
         description="Find answers to common questions about our luxury event styling services, booking process, and coverage areas in Cyprus."
+        keywords="event styling FAQ, party planner questions Cyprus, event planning FAQ Cyprus, wedding planner FAQ, Cyprus event services questions, booking event planner Cyprus, event styling pricing Cyprus, party planning FAQ"
       />
       
       {/* Hero Section */}

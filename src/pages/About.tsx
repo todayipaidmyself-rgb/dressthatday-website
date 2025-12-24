@@ -64,6 +64,7 @@ export default function About() {
       <SEO 
         title="About Us | Luxury Event Styling Cyprus | Dress That Day"
         description="Discover Dress That Day - Cyprus's luxury event styling experts. From romantic proposals to elegant weddings, we create unforgettable experiences with premium decor, bespoke styling, and attention to every detail."
+        keywords="about Dress That Day, Cyprus event stylist, luxury event planner Cyprus, event styling company Cyprus, Paphos event planner, Limassol event styling, Cyprus wedding planner, event design Cyprus, celebration stylist Cyprus, party planner Cyprus"
         canonical="/about"
         image="/images/about_hero_luxury_experiences.webp"
         schema={schema}

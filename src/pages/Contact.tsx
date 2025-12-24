@@ -66,6 +66,7 @@ export default function Contact() {
       <SEO 
         title="Contact Us | Book Your Luxury Event Styling | Dress That Day Cyprus"
         description="Ready to plan your dream event? Contact Dress That Day for luxury event styling in Paphos and Limassol, Cyprus. Weddings, proposals, birthdays, teepee parties, and more. Call +357 99 512309 or email hello@dressthatday.com"
+        keywords="contact Dress That Day, book event planner Cyprus, event styling inquiry, Cyprus party planner contact, wedding planner Cyprus contact, event consultation Cyprus, book party stylist Cyprus, Paphos event planner contact, Limassol event styling, Cyprus event booking"
         canonical="/contact"
         schema={schema}
       />

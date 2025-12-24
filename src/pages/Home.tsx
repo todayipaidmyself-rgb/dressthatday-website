@@ -144,6 +144,7 @@ export default function Home() {
       <SEO 
         title="Luxury Event Styling Cyprus"
         description="Transform your special occasions into timeless masterpieces with Dress That Day. Premier event styling for weddings, proposals, and parties in Paphos and Limassol."
+        keywords="luxury event styling Cyprus, event planner Cyprus, party styling Paphos, wedding planner Limassol, event decorator Cyprus, kids party planner Cyprus, proposal styling Cyprus, balloon decorations Cyprus, event design Cyprus, celebration styling Cyprus, luxury party planner Cyprus, event styling services Cyprus"
         schema={schema}
       />
       {/* Hero Section */}

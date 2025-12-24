@@ -58,6 +58,7 @@ export default function DesignYourDay() {
       <SEO 
         title="Design Your Day | Dress That Day Cyprus"
         description="Create your bespoke event vision with our interactive styling quiz. Discover your perfect celebration package."
+        keywords="event planning Cyprus, party planner Cyprus, event stylist Cyprus, custom event design, bespoke celebration Cyprus, event consultation Cyprus, party planning services, event styling consultation, Cyprus event planner, celebration design Cyprus"
         canonical="/design-your-day"
       />
       <section className="min-h-screen pt-32 pb-20 bg-luxury-blush flex items-center justify-center relative overflow-hidden" data-scroll-section>
