@@ -127,6 +127,13 @@ export default function Christmas() {
       <Helmet>
         <title>Christmas Party Styling Cyprus | Breakfast with Santa | Dress That Day</title>
         <meta name="description" content="Magical Christmas party styling and Breakfast with Santa experiences in Cyprus. Transform your home or venue into a winter wonderland with festive decor, Santa visits, and holiday celebrations in Paphos and Limassol." />
+        <meta name="keywords" content="Christmas party styling Cyprus, Breakfast with Santa Cyprus, Christmas decor Cyprus, festive party planner Paphos, holiday event styling Limassol, Christmas tree decoration Cyprus, Santa visit Cyprus, corporate Christmas party Cyprus, residential Christmas decor Cyprus, winter wonderland Cyprus, Christmas event planner Cyprus, holiday styling Cyprus, festive decorations Cyprus, LChâteau Christmas event" />
+        <link rel="canonical" href="https://dressthatday.com/experiences/christmas" />
+        <meta property="og:title" content="Christmas Party Styling Cyprus | Breakfast with Santa | Dress That Day" />
+        <meta property="og:description" content="Magical Christmas party styling and Breakfast with Santa experiences in Cyprus. Transform your home or venue into a winter wonderland with festive decor, Santa visits, and holiday celebrations." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dressthatday.com/experiences/christmas" />
+        <meta property="og:image" content="https://dressthatday.com/images/heroes/christmas-hero.webp" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

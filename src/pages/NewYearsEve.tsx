@@ -103,9 +103,9 @@ export default function NewYearsEve() {
     "/images/experiences/new-years-eve/inspo/nye_gallery_1.webp",
     "/images/experiences/new-years-eve/inspo/nye_gallery_2.webp",
     "/images/experiences/new-years-eve/inspo/nye_gallery_3.webp",
-    "/images/experiences/new-years-eve/inspo/nye_gallery_4.webp",
-    "/images/experiences/new-years-eve/inspo/nye_gallery_5.webp",
-    "/images/experiences/new-years-eve/inspo/nye_gallery_6.webp"
+    "/images/nye_closeup_floral.webp",
+    "/images/nye_closeup_dining.webp",
+    "/images/nye_closeup_balloons.webp"
   ];
 
   const openLightbox = (index: number) => {
@@ -118,6 +118,13 @@ export default function NewYearsEve() {
       <Helmet>
         <title>Luxury New Year's Eve Party Planning Cyprus | Dress That Day</title>
         <meta name="description" content="Spectacular New Year's Eve party styling and event planning in Cyprus. Ring in the new year with glamorous decor, champagne towers, balloon drops, and unforgettable celebration design. NYE events in Limassol, Paphos, Larnaca, Nicosia." />
+        <meta name="keywords" content="New Year's Eve Cyprus, NYE party planning Cyprus, New Year party styling Paphos, New Year event planner Limassol, champagne tower Cyprus, balloon drop Cyprus, midnight celebration Cyprus, New Year gala Cyprus, countdown party Cyprus, luxury NYE events Cyprus, New Year's Eve decor Cyprus, party planner Cyprus, event styling Cyprus" />
+        <link rel="canonical" href="https://dressthatday.com/experiences/new-years-eve" />
+        <meta property="og:title" content="Luxury New Year's Eve Party Planning Cyprus | Dress That Day" />
+        <meta property="og:description" content="Spectacular New Year's Eve party styling and event planning in Cyprus. Ring in the new year with glamorous decor, champagne towers, balloon drops, and unforgettable celebration design." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dressthatday.com/experiences/new-years-eve" />
+        <meta property="og:image" content="https://dressthatday.com/images/heroes/new-years-eve-hero.webp" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

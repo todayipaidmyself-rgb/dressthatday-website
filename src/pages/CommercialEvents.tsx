@@ -118,6 +118,13 @@ export default function CommercialEvents() {
       <Helmet>
         <title>Luxury Commercial Events | Dress That Day Cyprus</title>
         <meta name="description" content="Professional event styling for businesses in Cyprus. Elevate your brand with sophisticated launch parties, corporate dinners, and promotional events." />
+        <meta name="keywords" content="commercial events Cyprus, corporate event styling Cyprus, business event planner Paphos, brand activation Cyprus, product launch Cyprus, corporate dinner Cyprus, company party Cyprus, promotional events Cyprus, business styling Limassol, corporate party planner Cyprus, brand event Cyprus, business celebration Cyprus, conference styling Cyprus, gala dinner Cyprus" />
+        <link rel="canonical" href="https://dressthatday.com/experiences/commercial-events" />
+        <meta property="og:title" content="Luxury Commercial Events | Dress That Day Cyprus" />
+        <meta property="og:description" content="Professional event styling for businesses in Cyprus. Elevate your brand with sophisticated launch parties, corporate dinners, and promotional events." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dressthatday.com/experiences/commercial-events" />
+        <meta property="og:image" content="https://dressthatday.com/images/heroes/commercial-events-hero.webp" />
       </Helmet>
 
       <Navigation />
@@ -232,7 +239,7 @@ export default function CommercialEvents() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/experiences/commercial-events/commercial_included.jpg" 
+                src="/images/commercial_included.webp" 
                 alt="Commercial event details" 
                 className="w-full h-full object-cover"
               />
