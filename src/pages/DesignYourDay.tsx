@@ -72,7 +72,7 @@ export default function DesignYourDay() {
             <div className="bg-white p-8 md:p-16 shadow-2xl border border-luxury-gold/20 animate-[fadeIn_0.8s_ease-out]">
               <div className="mb-12 text-center">
                 <span className="text-luxury-gold text-sm uppercase tracking-[0.2em] mb-4 block">Step {step} of {questions.length}</span>
-                <h2 className="font-display text-3xl md:text-4xl text-luxury-text">{questions[(step as number) - 1].question}</h2>
+                <h2 className="font-serif text-3xl md:text-4xl text-luxury-text">{questions[(step as number) - 1].question}</h2>
                 <div className="w-full bg-gray-100 h-1 mt-8 rounded-full overflow-hidden">
                   <div 
                     className="bg-luxury-gold h-full transition-all duration-500 ease-out"
@@ -116,7 +116,7 @@ export default function DesignYourDay() {
               <RevealText 
                 text="Your Vision Awaits" 
                 tag="h2" 
-                className="font-display text-4xl md:text-5xl text-luxury-text mb-6"
+                className="font-serif text-4xl md:text-5xl text-luxury-text mb-6"
               />
               <p className="font-body text-gray-600 text-lg font-light mb-12 leading-relaxed">
                 Based on your preferences, we have some exquisite ideas in mind. Let's bring your 
@@ -125,7 +125,7 @@ export default function DesignYourDay() {
               </p>
               
               <div className="bg-luxury-blush/30 p-8 mb-12 border border-luxury-gold/10">
-                <h3 className="font-display text-xl text-luxury-text mb-4">Your Curated Profile</h3>
+                <h3 className="font-serif text-xl text-luxury-text mb-4">Your Curated Profile</h3>
                 <ul className="text-left space-y-3 max-w-md mx-auto">
                   {Object.entries(answers).map(([key, value]) => (
                     <li key={key} className="flex justify-between text-sm border-b border-white/50 pb-2">

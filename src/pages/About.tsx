@@ -96,7 +96,7 @@ export default function About() {
             <RevealText 
               text="Designed around your moment" 
               tag="h2" 
-              className="font-display text-4xl md:text-5xl text-luxury-text mb-12 text-center"
+              className="font-serif text-4xl md:text-5xl text-luxury-text mb-12 text-center"
             />
             <div className="space-y-8 text-center">
               <p className="font-body text-gray-700 leading-relaxed text-lg md:text-xl font-light" data-scroll data-scroll-speed="0.5">
@@ -116,7 +116,7 @@ export default function About() {
           <RevealText 
             text="Design your day in three simple steps" 
             tag="h2" 
-            className="font-display text-4xl md:text-5xl text-luxury-text mb-16 text-center"
+            className="font-serif text-4xl md:text-5xl text-luxury-text mb-16 text-center"
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto">
             {[
@@ -138,8 +138,8 @@ export default function About() {
               }
             ].map((step, i) => (
               <div key={i} className="bg-white p-8 md:p-10 shadow-lg hover:shadow-2xl transition-shadow duration-500" data-scroll data-scroll-speed={i * 0.5}>
-                <div className="font-display text-6xl md:text-7xl text-luxury-gold/20 mb-4">{step.num}</div>
-                <h3 className="font-display text-2xl md:text-3xl text-luxury-text mb-4">
+                <div className="font-serif text-6xl md:text-7xl text-luxury-gold/20 mb-4">{step.num}</div>
+                <h3 className="font-serif text-2xl md:text-3xl text-luxury-text mb-4">
                   {step.hasLink ? (
                     <>
                       Tell us the vibe —{' '}
@@ -165,7 +165,7 @@ export default function About() {
             <RevealText 
               text="Experiences we style" 
               tag="h2" 
-              className="font-display text-4xl md:text-5xl text-luxury-text mb-6 text-center"
+              className="font-serif text-4xl md:text-5xl text-luxury-text mb-6 text-center"
             />
             <p className="font-body text-gray-600 text-lg md:text-xl font-light text-center mb-16 max-w-3xl mx-auto">
               Choose a signature setup or let us curate something completely bespoke.
@@ -179,7 +179,7 @@ export default function About() {
                   data-scroll 
                   data-scroll-speed={i % 3 * 0.3}
                 >
-                  <h3 className="font-display text-xl md:text-2xl text-luxury-text mb-3 group-hover:text-luxury-gold transition-colors duration-500">
+                  <h3 className="font-serif text-xl md:text-2xl text-luxury-text mb-3 group-hover:text-luxury-gold transition-colors duration-500">
                     {exp.title}
                   </h3>
                   <p className="font-body text-gray-600 text-sm font-light leading-relaxed">
@@ -235,7 +235,7 @@ export default function About() {
             <RevealText 
               text="What's included when you work with us" 
               tag="h2" 
-              className="font-display text-4xl md:text-5xl text-luxury-text mb-16 text-center"
+              className="font-serif text-4xl md:text-5xl text-luxury-text mb-16 text-center"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
               {benefits.map((benefit, i) => {
@@ -260,7 +260,7 @@ export default function About() {
           <RevealText 
             text="Let's design your day" 
             tag="h2" 
-            className="font-display text-4xl md:text-6xl text-luxury-text mb-8"
+            className="font-serif text-4xl md:text-6xl text-luxury-text mb-8"
           />
           <p className="font-body text-gray-600 text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto">
             Tell us what you're dreaming of — we'll handle the details and deliver the wow.

@@ -96,11 +96,11 @@ export default function FAQ() {
       {/* Hero Section */}
       <section className="relative pt-40 pb-20 bg-luxury-blush/20 overflow-hidden">
         <div className="container mx-auto px-6 text-center relative z-10">
-          <span className="block font-display text-luxury-gold text-sm tracking-[0.2em] uppercase mb-4">Information</span>
+          <span className="block font-serif text-luxury-gold text-sm tracking-[0.2em] uppercase mb-4">Information</span>
           <RevealText 
             text="Frequently Asked Questions" 
             tag="h1" 
-            className="font-display text-4xl md:text-6xl text-luxury-text mb-6"
+            className="font-serif text-4xl md:text-6xl text-luxury-text mb-6"
           />
           <p className="font-body text-gray-600 max-w-2xl mx-auto text-lg font-light">
             Everything you need to know about our services, process, and policies.
@@ -113,7 +113,7 @@ export default function FAQ() {
         <div className="container mx-auto px-6 max-w-4xl">
           {faqData.map((category, catIndex) => (
             <div key={catIndex} className="mb-16">
-              <h2 className="font-display text-2xl text-luxury-text mb-8 border-b border-luxury-pink/20 pb-4">
+              <h2 className="font-serif text-2xl text-luxury-text mb-8 border-b border-luxury-pink/20 pb-4">
                 {category.title}
               </h2>
               <div className="space-y-4">
@@ -157,7 +157,7 @@ export default function FAQ() {
           ))}
           
           <div className="text-center mt-20 p-10 bg-luxury-blush/10 border border-luxury-pink/20">
-            <h3 className="font-display text-2xl text-luxury-text mb-4">Still have questions?</h3>
+            <h3 className="font-serif text-2xl text-luxury-text mb-4">Still have questions?</h3>
             <p className="font-body text-gray-600 mb-8 font-light">
               We're here to help. Reach out to us directly and we'll get back to you shortly.
             </p>

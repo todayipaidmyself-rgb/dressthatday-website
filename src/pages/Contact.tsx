@@ -76,7 +76,7 @@ export default function Contact() {
             <RevealText 
               text="Begin Your Journey" 
               tag="h1" 
-              className="font-display text-5xl md:text-7xl text-luxury-text mb-6"
+              className="font-serif text-5xl md:text-7xl text-luxury-text mb-6"
             />
             <p className="font-body text-gray-600 text-lg font-light max-w-2xl mx-auto">
               We invite you to share your vision with us. Whether you're planning an intimate proposal or a grand celebration, we are here to bring your dreams to life.
@@ -86,7 +86,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
             <div className="space-y-12">
               <div>
-                <h2 className="font-display text-2xl text-luxury-text mb-4">Get in Touch</h2>
+                <h2 className="font-serif text-2xl text-luxury-text mb-4">Get in Touch</h2>
                 <p className="font-body text-gray-600 font-light mb-2">
                   <span className="block text-xs uppercase tracking-widest text-gray-400 mb-1">Phone / WhatsApp</span>
                   <a href="tel:+35799512309" className="hover:text-luxury-gold transition-colors text-lg">(00 357) 99 512309</a>
@@ -98,7 +98,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <h2 className="font-display text-2xl text-luxury-text mb-4">Visit Us</h2>
+                <h2 className="font-serif text-2xl text-luxury-text mb-4">Visit Us</h2>
                 <p className="font-body text-gray-600 font-light leading-relaxed">
                   4 Agiou Stefanou Street<br />
                   8560 Chlorakas<br />
@@ -108,7 +108,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <h2 className="font-display text-2xl text-luxury-text mb-4">Service Areas</h2>
+                <h2 className="font-serif text-2xl text-luxury-text mb-4">Service Areas</h2>
                 <p className="font-body text-gray-600 font-light leading-relaxed">
                   Primarily serving Paphos and Limassol.<br />
                   Available for destination events across Cyprus upon request.
@@ -116,7 +116,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <h2 className="font-display text-2xl text-luxury-text mb-4">Our Services</h2>
+                <h2 className="font-serif text-2xl text-luxury-text mb-4">Our Services</h2>
                 <div className="grid grid-cols-2 gap-4">
                   <Link href="/teepee-parties" className="font-body text-gray-600 hover:text-luxury-gold transition-colors text-sm">
                     → Teepee Tent Parties
@@ -147,7 +147,7 @@ export default function Contact() {
             </div>
 
             <div className="bg-white p-10 shadow-sm border border-gray-100">
-              <h2 className="font-display text-2xl text-luxury-text mb-6">Send Us a Message</h2>
+              <h2 className="font-serif text-2xl text-luxury-text mb-6">Send Us a Message</h2>
               <form className="space-y-8" action="https://formspree.io/f/your-form-id" method="POST">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2">

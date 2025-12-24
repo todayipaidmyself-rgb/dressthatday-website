@@ -215,7 +215,7 @@ export default function Blog() {
           <RevealText 
             text="The Journal" 
             tag="h1" 
-            className="font-display text-5xl md:text-7xl text-luxury-text mb-6 hidden"
+            className="font-serif text-5xl md:text-7xl text-luxury-text mb-6 hidden"
           />
           <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto font-light">
             Inspiration, expert advice, and stories from the world of luxury event styling in Cyprus.
@@ -268,7 +268,7 @@ export default function Blog() {
                       if (parent) {
                         parent.classList.add('flex', 'items-center', 'justify-center', 'bg-luxury-blush/30');
                         const placeholder = document.createElement('div');
-                        placeholder.className = 'text-luxury-text/30 font-display text-xl uppercase tracking-widest';
+                        placeholder.className = 'text-luxury-text/30 font-serif text-xl uppercase tracking-widest';
                         placeholder.innerText = 'Dress That Day';
                         parent.appendChild(placeholder);
                       }
@@ -284,7 +284,7 @@ export default function Blog() {
                   <span className="flex items-center"><Tag size={12} className="mr-1" /> {post.category}</span>
                 </div>
 
-                <h2 className="font-display text-2xl text-luxury-text mb-4 group-hover:text-luxury-gold transition-colors duration-300 leading-tight">
+                <h2 className="font-serif text-2xl text-luxury-text mb-4 group-hover:text-luxury-gold transition-colors duration-300 leading-tight">
                   {post.title}
                 </h2>
                 
@@ -303,7 +303,7 @@ export default function Blog() {
 
           {filteredPosts.length === 0 && (
             <div className="text-center py-20">
-              <p className="font-display text-2xl text-gray-400">No articles found in this category.</p>
+              <p className="font-serif text-2xl text-gray-400">No articles found in this category.</p>
               <button 
                 onClick={() => setActiveCategory('All')}
                 className="mt-4 text-luxury-gold hover:underline"

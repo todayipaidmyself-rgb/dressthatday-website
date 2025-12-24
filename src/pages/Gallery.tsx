@@ -84,7 +84,7 @@ export default function Gallery() {
             <RevealText 
               text="Our Portfolio" 
               tag="h1" 
-              className="font-display text-5xl md:text-7xl text-luxury-text mb-6 hidden"
+              className="font-serif text-5xl md:text-7xl text-luxury-text mb-6 hidden"
             />
             <p className="font-body text-gray-600 text-lg font-light max-w-2xl mx-auto mb-10">
               Every image tells a story. These are real moments from real events we've had the privilege to style across Cyprus.
@@ -118,7 +118,7 @@ export default function Gallery() {
                   className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
-                  <h3 className="font-display text-white text-2xl mb-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{img.title}</h3>
+                  <h3 className="font-serif text-white text-2xl mb-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{img.title}</h3>
                   <p className="font-body text-white/80 text-sm font-light transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">{img.loc}</p>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function Gallery() {
             <RevealText 
               text="Ready to create your moment?" 
               tag="h2" 
-              className="font-display text-3xl md:text-4xl text-luxury-text mb-6"
+              className="font-serif text-3xl md:text-4xl text-luxury-text mb-6"
             />
             <p className="font-body text-gray-600 text-lg font-light mb-8 max-w-xl mx-auto">
               Let's design an event that's uniquely yours. Every celebration deserves to be styled with intention.
