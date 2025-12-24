@@ -219,7 +219,7 @@ export default function Home() {
               <RevealText 
                 text="The Finishing Touch." 
                 tag="h2" 
-                className="font-display text-5xl md:text-6xl text-luxury-text mb-8 leading-tight"
+                className="font-serif text-5xl md:text-6xl text-luxury-text mb-8 leading-tight"
               />
               <p className="font-body text-gray-600 leading-relaxed mb-8 text-lg font-light">
                 Looking for an event décor provider to finish and ‘dress’ your event? Dress That Day delivers a five-star styling service, refined inspiration, and beautifully executed details — from concept to final flourish.
@@ -229,7 +229,7 @@ export default function Home() {
               </p>
               
               <div className="mb-10">
-                <h3 className="font-display text-2xl text-luxury-text mb-4">Event Decor & Styling</h3>
+                <h3 className="font-serif text-2xl text-luxury-text mb-4">Event Decor & Styling</h3>
                 <ul className="grid grid-cols-2 gap-x-4 gap-y-2 font-body text-gray-600 text-sm font-light">
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-2"></span>Inspiration & Ideas</li>
                   <li className="flex items-center"><span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-2"></span>Themed Styling</li>
@@ -267,7 +267,7 @@ export default function Home() {
             <RevealText 
               text="All Kinds of Occasions" 
               tag="h2" 
-              className="font-display text-5xl md:text-6xl text-luxury-text mb-8"
+              className="font-serif text-5xl md:text-6xl text-luxury-text mb-8"
             />
             <p className="font-body text-gray-600 leading-relaxed text-lg font-light mb-10">
               From intimate gatherings to grand celebrations, we curate bespoke environments that reflect your unique style. Our passion lies in the details—the textures, the colors, the light—weaving them together to tell your story.
@@ -293,7 +293,7 @@ export default function Home() {
                     className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-[1.5s] ease-out group-hover:scale-110"
                   />
                   <div className="absolute inset-0 z-20 flex flex-col justify-end p-10 text-white">
-                    <h3 className="font-display text-3xl mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <h3 className="font-serif text-3xl mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                       {category.title}
                     </h3>
                     <p className="font-body text-sm font-light opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100 max-w-md">
@@ -327,7 +327,7 @@ export default function Home() {
               <RevealText 
                 text="All Kinds of Occasions" 
                 tag="h2" 
-                className="font-display text-5xl md:text-6xl text-luxury-text mb-8 leading-tight"
+                className="font-serif text-5xl md:text-6xl text-luxury-text mb-8 leading-tight"
               />
               <p className="font-body text-gray-600 leading-relaxed mb-8 text-lg font-light">
                 Whether it's a whimsical children's birthday, a sophisticated baby shower, a romantic proposal, or a corporate gala, we bring the same level of dedication and artistry to every event.
@@ -371,7 +371,7 @@ export default function Home() {
           <RevealText 
             text="Ready to Design Your Day?" 
             tag="h2" 
-            className="font-display text-4xl md:text-6xl text-luxury-text mb-8"
+            className="font-serif text-4xl md:text-6xl text-luxury-text mb-8"
           />
           <p className="font-body text-lg text-gray-600 mb-12 max-w-2xl mx-auto font-light">
             Let's turn your vision into a breathtaking reality. Contact us today to begin your journey.
