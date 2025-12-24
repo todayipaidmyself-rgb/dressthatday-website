@@ -100,12 +100,12 @@ export default function ThemedParties() {
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/themed_gallery_1_v2.webp",
-    "/images/themed_gallery_2_v2.webp",
-    "/images/themed_gallery_3_v2.webp",
-    "/images/themed_gallery_4_v2.webp",
-    "/images/themed_gallery_5_v2.webp",
-    "/images/themed_gallery_6_v2.webp"
+    "/images/themed_gallery_1_v2.webp?v=20251224",
+    "/images/themed_gallery_2_v2.webp?v=20251224",
+    "/images/themed_gallery_3_v2.webp?v=20251224",
+    "/images/themed_gallery_4_v2.webp?v=20251224",
+    "/images/themed_gallery_5_v2.webp?v=20251224",
+    "/images/themed_gallery_6_v2.webp?v=20251224"
   ];
 
   const galleryAltTexts = [
