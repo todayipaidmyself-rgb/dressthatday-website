@@ -187,38 +187,7 @@ export default function ThemedParties() {
         </div>
       </div>
 
-      {/* 3. Editorial Image Gallery */}
-      <div className="bg-[#f8f5f2] py-24">
-        <div className="max-w-[1400px] mx-auto px-6">
-          <div className="text-center mb-16">
-            <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Theme Inspiration</h3>
-            <p className="text-gray-500 font-light">Click to explore our themed party setups</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {galleryImages.map((src, index) => (
-              <div 
-                key={index}
-                className="group relative aspect-[4/5] overflow-hidden cursor-zoom-in bg-white shadow-sm"
-                onClick={() => openLightbox(index)}
-              >
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 z-10" />
-                <img 
-                  src={src} 
-                  alt={galleryAltTexts[index]}
-                  className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20">
-                  <p className="text-white text-xs tracking-[0.2em] uppercase font-light drop-shadow-md">
-                    View Detail
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+
 
       {/* 4. What's Included Section */}
       <div className="bg-white py-24">
