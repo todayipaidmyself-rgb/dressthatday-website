@@ -351,15 +351,18 @@
 }
 
 .design-your-day-link {
-  color: var(--luxury-text);
-  background: linear-gradient(to right, var(--luxury-gold), var(--luxury-gold)) bottom left / 0% 2px no-repeat;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: underline-reveal 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+  color: var(--luxury-gold);
+  text-decoration: underline;
+  text-decoration-color: var(--luxury-gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .design-your-day-link:hover {
-  color: var(--luxury-gold);
-  background-size: 100% 2px;
+  color: var(--luxury-text);
+  text-decoration-color: var(--luxury-text);
 }
 
 /* Homepage Hero Heading - BrittanySignature Font */
